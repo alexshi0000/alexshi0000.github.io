@@ -1,0 +1,52 @@
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.skill-container {
+  background-color: rgba(255,255,255,0.2); /* White text color */
+}
+
+.skill {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+}
+
+/* ANIMATIONS */
+@keyframes fill-cpp-bar    { from {width: 0%; opacity: 0.0} to {width: 95%; opacity: 1.0} }
+@keyframes fill-html-bar   { from {width: 0%; opacity: 0.0} to {width: 89%; opacity: 1.0} }
+@keyframes fill-java-bar   { from {width: 0%; opacity: 0.0} to {width: 93%; opacity: 1.0} }
+@keyframes fill-python-bar { from {width: 0%; opacity: 0.0} to {width: 91%; opacity: 1.0} }
+@keyframes fill-lisp-bar   { from {width: 0%; opacity: 0.0} to {width: 70%; opacity: 1.0} }
+
+@keyframes fill-cuda-bar   { from {width: 0%; opacity: 0.0} to {width: 84%; opacity: 1.0} }
+@keyframes fill-react-bar  { from {width: 0%; opacity: 0.0} to {width: 92%; opacity: 1.0} }
+@keyframes fill-spring-bar { from {width: 0%; opacity: 0.0} to {width: 88%; opacity: 1.0} }
+@keyframes fill-flask-bar  { from {width: 0%; opacity: 0.0} to {width: 86%; opacity: 1.0} }
+@keyframes fill-node-bar   { from {width: 0%; opacity: 0.0} to {width: 96%; opacity: 1.0} }
+
+/* before */
+.cpp-skill    {width: 95%; background-color: #f34b7d;}
+.html-skill   {width: 89%; background-color: #e34c26;}
+.java-skill   {width: 93%; background-color: #f18e33;}
+.python-skill {width: 91%; background-color: #3572a5;}
+.lisp-skill   {width: 70%; background-color: #3fb68b;}
+
+.cuda-skill   {width: 84%; background-color: #005fa9;}
+.react-skill  {width: 92%; background-color: #61dbfb;}
+.spring-skill {width: 88%; background-color: #6db33f;}
+.flask-skill  {width: 86%; background-color: #ffd43b;}
+.node-skill   {width: 96%; background-color: #814ccc;}
+
+/* after */
+
+.cpp-skill-after    {animation: fill-cpp-bar    3.0s; animation-timing-function: ease-out}
+.html-skill-after   {animation: fill-html-bar   3.0s; animation-timing-function: ease-out}
+.java-skill-after   {animation: fill-java-bar   3.0s; animation-timing-function: ease-out}
+.python-skill-after {animation: fill-python-bar 3.0s; animation-timing-function: ease-out}
+.lisp-skill-after   {animation: fill-lisp-bar   3.0s; animation-timing-function: ease-out}
+
+.cuda-skill-after   {animation: fill-cuda-bar   3.0s; animation-timing-function: ease-out}
+.react-skill-after  {animation: fill-react-bar  3.0s; animation-timing-function: ease-out}
+.spring-skill-after {animation: fill-spring-bar 3.0s; animation-timing-function: ease-out}
+.flask-skill-after  {animation: fill-flask-bar  3.0s; animation-timing-function: ease-out}
+.node-skill-after   {animation: fill-node-bar   3.0s; animation-timing-function: ease-out}

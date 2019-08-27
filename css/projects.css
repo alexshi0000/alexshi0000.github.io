@@ -1,0 +1,120 @@
+#project-container { /*big boss*/
+  background-color: #eee;
+
+  position: relative;
+  right: -0%;
+  display: inline-block;
+  width: 100%;
+  text-align: justify;
+
+  padding-top: 3%;
+  padding-bottom: 8%;
+
+  min-width: auto;
+}
+
+.project-wrapper { /*small boss*/
+  padding-bottom: 3%;
+  position: relative;
+  right: -23%;
+  width: 54%;
+}
+
+#mosaic {
+  position: relative;
+  width: 100%;
+
+  background-image: url('../images/floating-desk-c.png');
+  background-repeat: no-repeat;
+  background-position: center 0px;
+
+  -webkit-background-size: auto 100vh;
+  -moz-background-size: auto 100vh;
+  -o-background-size: auto 100vh;
+}
+
+.bg-fixed {
+  background-attachment: fixed;
+  transition: all 1s;
+}
+
+.bg-scroll {
+  background-attachment: scroll;
+  transition: all 1s;
+}
+
+/* PROJECT DISPLAY */
+
+.project-card-wrapper { /*small boss*/
+  padding-bottom: 0%; /*bottom of the page*/
+  position: relative;
+  right: -10%;
+  width: 80%;
+}
+
+.project-card {
+  position: relative;
+  z-index: 1;
+
+  margin-bottom: 0em;
+  height: 50%;
+  width: 100%;
+
+  background-color: #eee;
+  background-repeat: no-repeat;
+  background-position: center center;
+
+  -webkit-background-size: 100% auto;
+  -moz-background-size: 100% auto;
+  -o-background-size: 100% auto;
+
+  opacity: 0.0;
+  overflow: hidden;
+  box-shadow: 0.0rem 0.0rem 2rem 0 rgba(30, 30, 30, 0.5);
+
+  transition: all 0.25s;
+}
+
+.project-card:hover {
+  z-index: 99;
+  width: 100%;
+  background-size: 100% auto;
+  transform: scale(1.05);
+  transition: all 0.25s;
+}
+
+/* ANIMATION */
+
+@keyframes sweep-in-right {
+  from {
+    opacity: 0.0;
+    top: 75vh;
+  }
+  to {
+    opacity: 1.0;
+    top: 0vh;
+  }
+}
+
+@keyframes sweep-in-left {
+  from {
+    opacity: 0.0;
+    top: 75vh;
+  }
+  to {
+    opacity: 1.0;
+    top: 0vh;
+  }
+}
+
+.project-card-after-right {
+  animation: sweep-in-right 0.6s;
+  animation-timing-function: ease-out;
+  opacity: 1.0;
+}
+
+.project-card-after-left {
+  animation: sweep-in-left 0.6s;
+  animation-timing-function: ease-out;
+  opacity: 1.0;
+}

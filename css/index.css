@@ -1,0 +1,213 @@
+/*SETTINGS & RESETS*/
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  -webkit-backface-visibility: hidden;
+}
+
+html {
+  font-size: 1vw; /*default, use this as a baseline*/
+  overflow: scroll;
+  overflow-x: hidden;
+
+  scrollbar-width: none;
+
+  background-color: #111;
+}
+::-webkit-scrollbar {
+  width: 0px;  /* Remove scrollbar space */
+  background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: #eee;
+}
+
+body {
+  background-color: #eee;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+img {
+  height: 12px;
+  width: 12px;
+}
+
+.unselectable {
+-webkit-touch-callout: none;
+  -webkit-user-select: none;
+   -khtml-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+/*NAVBAR*/
+#navbar-parent {
+  position: relative;
+  list-style:none;
+  margin:0;
+  padding:0;
+  height: 5%; /*make sure this value matches the one in scroll.css*/
+  width: 100%;
+  right: -1.8%;
+}
+
+#navbar-list {
+  text-align:center;
+  display:inline;
+}
+
+.navbar-entries {
+  display: inline-block;
+  padding: 0.5%;
+  padding-right: 1.1%;
+  margin: 0px !important;
+}
+
+.navbar-links {
+  font-size: 190%;
+  font-family: 'Poiret One';
+  color: rgba(255,255,255,0.4);
+  text-shadow: rgba(255,255,255,0.4) 0 0 1px;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255,255,255,0.4);
+
+  -moz-text-stroke-width: 1px;
+  -moz-text-stroke-color: rgba(255,255,255,0.4);
+
+  -o-text-stroke-width: 1px;
+  -o-text-stroke-color: rgba(255,255,255,0.4);
+  transition: all 0.25s;
+}
+
+.navbar-links:hover {
+  font-size: 190%;
+  font-family: 'Poiret One';
+  color: rgba(255,255,255,1);
+  text-shadow: rgba(255,255,255,1) 0 0 1px;
+
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: rgba(255,255,255,1);
+
+  -moz-text-stroke-width: 1px;
+  -moz-text-stroke-color: rgba(255,255,255,1);
+
+  -o-text-stroke-width: 1px;
+  -o-text-stroke-color: rgba(255,255,255,1);
+  transition: all 0.25s;
+}
+
+/*propic*/
+#propic {
+  height: 40vh;
+  width:  auto;
+  left: 50%;
+  margin-top: -30vh;
+  margin-left: -20vh;
+  position: absolute;
+  top: 49%;
+}
+
+.propic-wrapper {
+  margin-top: 1px;
+  margin-left: 1px;
+  text-align: center;
+}
+
+/*arrow*/
+#arrow {
+  height: 10vh;
+  width:  auto;
+  left: 50%;
+  margin-top: 40vh;
+  margin-left: -5vh;
+  position: absolute;
+  top: 50%;
+  opacity: 0.6;
+}
+
+#arrow:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  margin-top: 40vh;
+}
+
+.arrow-wrapper {
+  margin-top: 1px;
+  margin-left: 1px;
+  text-align: center;
+
+}
+
+/*bg image front page*/
+#logo {
+  outline: 1px solid transparent;
+  margin-left: 8px;
+  margin-top: 5px;
+  height: 5%;
+  width: auto;
+  float: left;
+  position: absolute;
+}
+
+#top-container {
+  background-image: url('../images/ipad-main-c.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+
+  min-height: 100vh;
+  min-width: auto;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-attachment: fixed;
+}
+
+#intro-wrapper {
+  z-index: 999;
+}
+
+.intro {
+  background-color: rgba(0,0,0,0);
+  margin: 0 auto;
+  color: rgba(225,225,225,1.0);
+  text-shadow: rgba(10,10,10,0.9) 0 0 8px;
+  font-size: 360%;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 900;
+
+  position: relative;
+  left: -50%;
+}
+
+.typed-cursor{ /*match the same specs as above*/
+  font-size: 260%;
+  color: rgba(225,225,225,0.0);
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+
+.center-wrapper {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 58.5%;
+}

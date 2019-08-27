@@ -1,0 +1,20 @@
+#experience-section-container { /*big boss*/
+  background-color: #eee;
+
+  position: relative;
+  right: -0%;
+  display: inline-block;
+  width: 100%;
+  text-align: justify;
+
+  padding-top: 2.5%;
+  padding-bottom: 0%;
+
+  min-width: auto;
+}
+
+#experience-section-wrapper { /*small boss*/
+  position: relative;
+  right: -23%;
+  width: 54%;
+}

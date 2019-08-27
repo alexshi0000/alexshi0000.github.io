@@ -1,0 +1,284 @@
+.content-overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(20,20,20,0.0);
+  transition: background-color 0.2s;
+}
+
+.content-overlay:hover {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(20,20,20,0.7);
+  transition: background-color 0.2s;
+}
+
+.content-overlay-light {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(230,230,230,0.0);
+  transition: background-color 0.2s;
+}
+
+.content-overlay-light:hover {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(230,230,230,0.7);
+  transition: background-color 0.2s;
+}
+
+.project-title {
+  display: block;
+  font-family: 'Monoton', cursive;
+  font-weight: 500;
+  color: #fff;
+  font-size: 450%;
+  opacity: 0.8;
+
+  height: 102%;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  transition: opacity 0.2s, height 0.2s;
+}
+
+.project-title-dark {
+  display: block;
+  font-family: 'Monoton', cursive;
+  font-weight: 500;
+  color: #000;
+  font-size: 450%;
+  opacity: 0.8;
+
+  height: 102%;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  transition: opacity 0.2s, height 0.2s;
+}
+
+.content-overlay:hover .project-title {
+  display: block;
+  font-family: 'Monoton', cursive;
+  font-weight: 500;
+  color: #fff;
+  font-size: 450%;
+  opacity: 1.0;
+
+  height: 95%;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  transition: opacity 0.2s, height 0.2s;
+}
+
+.content-overlay-light:hover .project-title-dark {
+  display: block;
+  font-family: 'Monoton', cursive;
+  font-weight: 500;
+  color: #000;
+  font-size: 450%;
+  opacity: 1.0;
+
+  height: 95%;
+  width: 100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  transition: opacity 0.2s, height 0.2s;
+}
+
+/* ANIMATED CONTENT */
+
+@keyframes come-down {
+  from {
+    opacity: 0.0;
+    top: 55%;
+  }
+  to {
+    opacity: 1.0;
+    top: 58%;
+  }
+}
+
+@keyframes go-up {
+  from {
+    opacity: 1.0;
+    top: 58%;
+  }
+  to {
+    opacity: 0.0;
+    top: 55%;
+  }
+}
+
+.project-description {
+  animation: go-up 0.5s;
+
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #fff;
+  font-size: 150%;
+
+  text-align: center;
+  position: relative;
+  top: 58%;
+  opacity: 0.0;
+
+  text-shadow: rgba(0,0,0,0.9) 0 0 2px;
+}
+
+.project-description-dark {
+  animation: go-up 0.5s;
+
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #000;
+  font-size: 150%;
+
+  text-align: center;
+  position: relative;
+  top: 58%;
+  opacity: 0.0;
+
+  text-shadow: rgba(255,255,255,0.9) 0 0 2px;
+}
+
+.content-overlay:hover .project-description {
+  animation: come-down 0.5s;
+
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #fff;
+  font-size: 150%;
+
+  text-align: center;
+  position: relative;
+  top: 58%;
+  opacity: 1.0;
+
+  text-shadow: rgba(0,0,0,0.9) 0 0 2px;
+}
+
+.content-overlay-light:hover .project-description-dark {
+  animation: come-down 0.5s;
+
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  color: #000;
+  font-size: 150%;
+
+  text-align: center;
+  position: relative;
+  top: 58%;
+  opacity: 1.0;
+
+  text-shadow: rgba(255,255,255,0.9) 0 0 2px;
+}
+
+/* ARROW */
+.click-arrow {
+  display: block;
+  position: absolute;
+  width: 4%;
+  height: auto;
+  opacity: 0.0;
+  top: 85%;
+  left: 40%;
+  transition: opacity 0.2s, left 0.2s;
+}
+
+.click-arrow-dark {
+  display: block;
+  position: absolute;
+  width: 4%;
+  height: auto;
+  opacity: 0.0;
+  top: 85%;
+  left: 40%;
+  transition: opacity 0.2s, left 0.2s;
+}
+
+.content-overlay:hover .click-arrow {
+  display: block;
+  position: absolute;
+  width: 4%;
+  height: auto;
+  opacity: 0.95;
+  top: 85%;
+  left: 48%;
+  transition: opacity 0.2s, left 0.2s;
+}
+
+.content-overlay-light:hover .click-arrow-dark {
+  display: block;
+  position: absolute;
+  width: 4%;
+  height: auto;
+  opacity: 0.95;
+  top: 85%;
+  left: 48%;
+  transition: opacity 0.2s, left 0.2s;
+}
+
+.content-overlay:hover .click-arrow:hover {
+  display: block;
+  position: absolute;
+  width: 4%;
+  height: auto;
+  opacity: 0.7;
+  top: 85%;
+  left: 48.5%;
+  transition: opacity 0.2s, left 0.2s;
+
+  cursor: pointer;
+}
+
+.content-overlay-light:hover .click-arrow-dark:hover {
+  display: block;
+  position: absolute;
+  width: 4%;
+  height: auto;
+  opacity: 0.7;
+  top: 85%;
+  left: 48.5%;
+  transition: opacity 0.2s, left 0.2s;
+
+  cursor: pointer;
+}
+
+/* PROJECT SPECIFIC */
+
+#galaxy {
+  background-image: url('../images/galaxy.gif');
+}
+
+
+#tetris {
+  background-image: url('../images/tetris.gif');
+  background-size: 100% 105%;
+}
+
+#chat {
+  background-image: url('../images/chat.gif');
+  background-size: 105% 175%;
+}
+
+#foody {
+  background-image: url('../images/foody.gif');
+  background-size: 110% 130%;
+}

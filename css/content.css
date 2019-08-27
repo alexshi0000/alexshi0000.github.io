@@ -1,0 +1,98 @@
+/*content*/
+/*#about-me-header {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-size: 260%;
+  position: relative;
+}*/
+
+.content-header {
+  display: grid;
+  grid-template-columns: minmax(20px, 1fr) auto minmax(20px, 1fr);
+  align-items: center;
+  text-align: center;
+  grid-gap: 6%;
+  width: 100%;
+  font-size: 260%;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.content-header:before,
+.content-header:after {
+  content: '';
+  border-top: 1px solid;
+  border-top-color: rgba(20,20,20,0.7)
+}
+
+/*light*/
+.content-header-light {
+  color: #eee;
+}
+
+.content-header-light:before,
+.content-header-light:after {
+  content: '';
+  border-top: 1px solid;
+  border-top-color: rgba(230,230,230,0.7)
+}
+
+/*after the content is completed*/
+#content {
+  z-index: 99;
+  background-color: #eee;
+  color: #313131;
+  margin: 0px;
+  padding: 0px;
+}
+
+#about-me-paragraph-container {
+  position: relative;
+  right: -23%;
+  display: inline-block;
+  width: 54%;
+  text-align: justify;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+#contact-blocks {
+  vertical-align: middle;
+  display: inline-block;
+  right: 50%;
+  text-align: left;
+}
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited,
+.btn-primary:focus {
+    background-color: #8064A2;
+    border-color: #8064A2;
+}
+
+.about-me-cont { /*please insert here*/ }
+
+.about-me-cont img {
+  display: inline-block;
+  margin: 7%;
+  width: 40%;
+  height: auto;
+  border-radius: 0%;
+
+  box-shadow:         10px 10px 0px 1px rgba(20,20,30,0.3);
+  -moz-box-shadow:    10px 10px 0px 1px rgba(20,20,30,0.3);
+  -webkit-box-shadow: 10px 10px 0px 1px rgba(20,20,30,0.3);
+}
+
+.about-me-paragraph {
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: rgba(20,20,20,0.3) 0 0 1px;
+  font-size: 140%;
+}
+
+#skills-header {
+  position: relative;
+}
