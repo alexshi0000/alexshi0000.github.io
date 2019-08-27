@@ -274,11 +274,11 @@
 }
 
 #chat {
-  background-image: url('../images/chat.gif');
+  background-image: url('../images/chat.png');
   background-size: 105% 175%;
 }
 
 #foody {
-  background-image: url('../images/foody.gif');
-  background-size: 110% 130%;
+  background-image: url('../images/foody.png');
+  background-size: 100% 120%;
 }
