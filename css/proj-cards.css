@@ -1,28 +1,28 @@
 .content-overlay {
   height: 100%;
   width: 100%;
-  background-color: rgba(20,20,20,0.0);
+  background-color: rgba(10,10,10,0.0);
   transition: background-color 0.2s;
 }
 
 .content-overlay:hover {
   height: 100%;
   width: 100%;
-  background-color: rgba(20,20,20,0.7);
+  background-color: rgba(10,10,10,0.7);
   transition: background-color 0.2s;
 }
 
 .content-overlay-light {
   height: 100%;
   width: 100%;
-  background-color: rgba(230,230,230,0.0);
+  background-color: rgba(245,245,245,0.0);
   transition: background-color 0.2s;
 }
 
 .content-overlay-light:hover {
   height: 100%;
   width: 100%;
-  background-color: rgba(230,230,230,0.7);
+  background-color: rgba(245,245,245,0.7);
   transition: background-color 0.2s;
 }
 
