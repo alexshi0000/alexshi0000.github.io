@@ -32,7 +32,7 @@
   font-weight: 500;
   color: #fff;
   font-size: 450%;
-  opacity: 0.8;
+  opacity: 0.95;
 
   height: 102%;
   width: 100%;
@@ -50,7 +50,7 @@
   font-weight: 500;
   color: #000;
   font-size: 450%;
-  opacity: 0.8;
+  opacity: 0.95;
 
   height: 102%;
   width: 100%;
@@ -265,12 +265,13 @@
 
 #galaxy {
   background-image: url('../images/galaxy.gif');
+  background-size: 100% 150%;
 }
 
 
 #tetris {
-  background-image: url('../images/tetris.gif');
-  background-size: 100% 105%;
+  background-image: url('../images/tet.png');
+  background-size: 100% 140%;
 }
 
 #chat {
@@ -280,5 +281,20 @@
 
 #foody {
   background-image: url('../images/foody.png');
-  background-size: 100% 120%;
+  background-size: 100% 125%;
+}
+
+#fractree {
+  background-image: url('../images/fractree.png');
+  background-size: 100% 190%;
+}
+
+#metro {
+  background-image: url('../images/dualmetro.png');
+  background-size: 100% 130%;
+}
+
+#moziq {
+  background-image: url('../images/stallman.png');
+  background-size: 100% 170%;
 }
