@@ -166,7 +166,7 @@ img {
 }
 
 #top-container {
-  background-image: url('../images/ipad-main-c.png');
+  background-image: url('../images/hand-main.png');
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -187,7 +187,7 @@ img {
   background-color: rgba(0,0,0,0);
   margin: 0 auto;
   color: rgba(225,225,225,1.0);
-  text-shadow: rgba(10,10,10,0.9) 0 0 8px;
+  text-shadow: rgba(10,10,10,0.3) 0 0 8px;
   font-size: 360%;
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
