@@ -264,8 +264,8 @@
 /* PROJECT SPECIFIC */
 
 #galaxy {
-  background-image: url('../images/galaxy.gif');
-  background-size: 100% 150%;
+  background-image: url('../images/galaxy-min.gif');
+  background-size: 100% 110%;
 }
 
 
@@ -281,7 +281,7 @@
 
 #foody {
   background-image: url('../images/foody.png');
-  background-size: 100% 125%;
+  background-size: 100% 105%;
 }
 
 #fractree {
@@ -295,6 +295,6 @@
 }
 
 #moziq {
-  background-image: url('../images/stallman.png');
+  background-image: url('../images/stallman-min.png');
   background-size: 100% 170%;
 }
