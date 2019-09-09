@@ -298,3 +298,8 @@
   background-image: url('../images/stallman-min.png');
   background-size: 100% 170%;
 }
+
+#autodeck {
+  background-image: url('../images/autodeck.png');
+  background-size: 100% 100%;
+}
