@@ -1,12 +1,6 @@
 // since this is a static site, keep this file as small as possible
 
-
-
-
 // FUNCTIONAL & NAVIGATIONAL
-
-
-
 
 function scrolldown(target, speed, offset_ratio) {
   $('html, body').animate({
@@ -28,13 +22,7 @@ function resumeDownload() {
   //TODO
 }
 
-
-
-
 // PROJECT SECTION SCROLL EFFECT
-
-
-
 
 window.addEventListener('scroll', function() {
   var element = document.querySelector('.project-wrapper');
