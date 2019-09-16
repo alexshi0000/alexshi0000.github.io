@@ -79,7 +79,7 @@
   z-index: 99;
   width: 100%;
   background-size: 100% auto;
-  transform: scale(1.04);
+  transform: scale(1.0);
   transition: transform 0.25s;
 }
 

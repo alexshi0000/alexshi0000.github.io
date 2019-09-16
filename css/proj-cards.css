@@ -22,7 +22,7 @@
 .content-overlay-light:hover {
   height: 100%;
   width: 100%;
-  background-color: rgba(245,245,245,0.7);
+  background-color: rgba(245,245,245,0.8);
   transition: background-color 0.2s;
 }
 
@@ -301,5 +301,10 @@
 
 #autodeck {
   background-image: url('../images/autodeck.png');
+  background-size: 100% 110%;
+}
+
+#mental {
+  background-image: url('../images/mental-health.png');
   background-size: 100% 110%;
 }
