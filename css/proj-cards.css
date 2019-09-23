@@ -16,14 +16,14 @@
   height: 100%;
   width: 100%;
   background-color: rgba(245,245,245,0.0);
-  transition: background-color 0.2s;
+  transition: background-color 0.25s;
 }
 
 .content-overlay-light:hover {
   height: 100%;
   width: 100%;
-  background-color: rgba(245,245,245,0.8);
-  transition: background-color 0.2s;
+  background-color: rgba(245,245,245,0.7);
+  transition: background-color 0.25s;
 }
 
 .project-title {
