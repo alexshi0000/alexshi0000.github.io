@@ -1,5 +1,5 @@
 #contact-container { /*big boss*/
-  background-image: url("../images/phoney.png");
+  background-image: url("../images/redphone.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -117,6 +117,6 @@ textarea {
 }
 
 #subject {
-  height: 25%;
+  height: 22%;
   resize: none
 }
