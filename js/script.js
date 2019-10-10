@@ -1,5 +1,4 @@
 // since this is a static site, keep this file as small as possible
-
 // FUNCTIONAL & NAVIGATIONAL
 
 function scrolldown(target, speed, offset_ratio) {
@@ -15,7 +14,7 @@ function scrollup(target, speed) {
 }
 
 function resumePopup() {
-  //TODO
+  //TODO is actually whitened
 }
 
 function resumeDownload() {
@@ -50,10 +49,7 @@ window.addEventListener('scroll', function() {
 });
 
 
-
-
 // ANIMATION
-
 
 
 
