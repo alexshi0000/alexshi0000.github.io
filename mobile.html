@@ -15,21 +15,21 @@
 		<meta property="og:image" content="../images/floating-desk-min.png">
 
     <!--stylesheets-->
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/scroll.css">
-    <link rel="stylesheet" href="css/content.css">
-    <link rel="stylesheet" href="css/socials.css">
-    <link rel="stylesheet" href="css/bootstrap-iso.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/skills-section.css">
-    <link rel="stylesheet" href="css/skillbar.css">
-    <link rel="stylesheet" href="css/experience.css">
-    <link rel="stylesheet" href="css/timeline.css">
-    <link rel="stylesheet" href="css/projects.css">
-    <link rel="stylesheet" href="css/proj-cards.css">
-    <link rel="stylesheet" href="css/contact.css">
-    <link rel="stylesheet" href="css/bootstrap-css/bootstrap.min.css">
+    <link rel="stylesheet" href="mobile-css/fonts.css">
+    <link rel="stylesheet" href="mobile-css/index.css">
+    <link rel="stylesheet" href="mobile-css/scroll.css">
+    <link rel="stylesheet" href="mobile-css/content.css">
+    <link rel="stylesheet" href="mobile-css/socials.css">
+    <link rel="stylesheet" href="mobile-css/bootstrap-iso.css">
+    <link rel="stylesheet" href="mobile-css/footer.css">
+    <link rel="stylesheet" href="mobile-css/skills-section.css">
+    <link rel="stylesheet" href="mobile-css/skillbar.css">
+    <link rel="stylesheet" href="mobile-css/experience.css">
+    <link rel="stylesheet" href="mobile-css/timeline.css">
+    <link rel="stylesheet" href="mobile-css/projects.css">
+    <link rel="stylesheet" href="mobile-css/proj-cards.css">
+    <link rel="stylesheet" href="mobile-css/contact.css">
+    <link rel="stylesheet" href="mobile-css/bootstrap-css/bootstrap.min.css">
 
     <!--CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -47,7 +47,7 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/typed.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/mobile-redir.js"></script>
+		<script type="text/javascript" src="js/desktop-redir.js"></script>
 
     <!---eye candy-->
     <link rel="shortcut icon" type="image/x-icon" href="images/name-logo-dark.png"/>
@@ -55,14 +55,8 @@
 
   <body onload="load_animators()">
     <div id="top-container" class="speed-1">
-      <img src="images/name-logo.png" id="logo" class="unselectable">
       <div id = "navbar-parent" class="unselectable">
         <ul id = "navbar-list" class="d-flex justify-content-center">
-          <li class = "navbar-entries">
-            <a class = "navbar-links" href="">
-              home
-            </a>
-          </li>
           <li class = "navbar-entries">
             <p class = "navbar-links" style="cursor:pointer;" onclick="scrolldown('#content',1100,1)">
               about
@@ -94,19 +88,9 @@
       </div>
       -->
 
-      <div id="intro-wrapper" class="center-wrapper unselectable">
-        <span id="typed-intro" class="intro"></span>
+      <div id="intro-wrapper" class="intro-wrapper-center unselectable">
+        <span id="typed-intro" class="intro">hi, my name is Alex Shi</span>
       </div>
-
-      <script>
-        var typed = new Typed('#typed-intro', {
-          strings: ["hey, i'm Alex Shi", "developer, maker, creative."],
-          backSpeed: 32,
-          typeSpeed: 42,
-          backDelay: 2000,
-          loop: !0,
-        });
-      </script>
 
       <!-- include link to socials here -->
       <div id="socials" class="socials-wrapper unselectable">
@@ -119,10 +103,6 @@
           <li><a href="https://devpost.com/alexshi0000" target="_blank"><img class="social-img" src="images/logos/devpost-logo-white.png" alt="Devpost" /></a></li>
         </ul>
       </div>
-
-      <section id="down-arrow" class="arrow-demo unselectable down-arrow-size">
-        <a onclick="scrolldown('#content', 1100,1)"><span class="arrow-span"></span><span></span><span></span></a>
-      </section>
     </div> <!-- first page -->
 
     <div id="content">

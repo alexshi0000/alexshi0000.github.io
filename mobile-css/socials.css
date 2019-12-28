@@ -10,12 +10,12 @@ ul#horizontal-list {
 ul#horizontal-list li {
   display: inline-block;
   float: none;
-  padding: 1.0%;
+  padding: 3.5%;
 }
 
 .socials-wrapper {
   z-index: 999;
-  bottom: 21.0vh;
+  bottom: 3.0vh;
   width: 100%;
   text-align: center;
   position: absolute;
@@ -24,7 +24,7 @@ ul#horizontal-list li {
 .social-img {
   outline: 1px solid transparent; /*simulate antialiased*/
   position: relative;
-  height: 3.5vh;
+  height: 4.0vh;
   width: auto;
   opacity: 0.6;
   transition: opacity 0.25s, transform 0.01s;

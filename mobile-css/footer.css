@@ -1,0 +1,22 @@
+#footer {
+  margin: 0px;
+  position: relative;
+  display: inline-block;
+  padding-top: 1%;
+  text-align: center;
+  width: 100%;
+  background-color: #111;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: rgba(225,225,225,0.1) 0 0 1px;
+}
+
+#footer-message {
+  font-size: 135%;
+  color: #eee;
+}
+
+#copyright-notice {
+  padding: 0px;
+  font-size: 90%;
+  color: #aaa;
+}
