@@ -44,21 +44,21 @@ textarea {
   resize: none;
   color: #eee;
 
-  font-weight: 900;
+  font-weight: 300;
 }
 
 ::placeholder {
-  font-weight: 900;
+  font-weight: 300;
   color: #999;
 }
 
 :-ms-input-placeholder {
-  font-weight: 900;
+  font-weight: 300;
   color: #999;
 }
 
 ::-ms-input-placeholder {
-  font-weight: 900;
+  font-weight: 300;
   color: #999;
 }
 
@@ -72,7 +72,7 @@ textarea {
   border-color: #eee;
 
   font-size: 100%;
-  font-weight: 900;
+  font-weight: 300;
 }
 
 /* When moving the mouse over the submit button, add a color */
@@ -89,8 +89,8 @@ textarea {
   padding-left: 20%;
 
   font-size: 110%;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 /*USR*/
@@ -108,12 +108,12 @@ textarea {
 
 #name {
   color: #eee;
-  font-weight: 900;
+  font-weight: 300;
 }
 
 #email {
   color: #eee;
-  font-weight: 900;
+  font-weight: 300;
 }
 
 #subject {

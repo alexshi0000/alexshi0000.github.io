@@ -13,6 +13,11 @@
 
 		<!--meta tags-->
 		<meta property="og:image" content="../images/floating-desk-min.png">
+		<meta property="og:title" content="Alex Shi">
+		<meta property="og:site_name" content="Alex Shi">
+		<meta property="og:description" content="Hey! I'm Alex, a computer science student at the University of Waterloo. My interests include anything and everything tech related.">
+		<meta property="og:url" content="www.alexshi.me">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <!--emoji char set-->
 
     <!--stylesheets-->
     <link rel="stylesheet" href="css/fonts.css">
@@ -34,6 +39,7 @@
     <!--CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax/parallax.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bowser@2.5.3/es5.js"></script>
 
     <!--bootstrap-->
     <style>
@@ -99,13 +105,21 @@
       </div>
 
       <script>
-        var typed = new Typed('#typed-intro', {
-          strings: ["hey, i'm Alex Shi", "developer, maker, creative."],
-          backSpeed: 32,
-          typeSpeed: 42,
-          backDelay: 2000,
-          loop: !0,
-        });
+  			var result = bowser.getParser(navigator.userAgent).getResult();
+				if (result.browser.name != "Safari") {
+					var typed = new Typed('#typed-intro', {
+						strings: ["hey, i'm Alex Shi", "developer, maker, creative."],
+						backSpeed: 32,
+						typeSpeed: 42,
+						backDelay: 2000,
+						loop: !0,
+					});
+				}
+				else { //set a default for safari (re-add the text)
+					var typedSafari = document.getElementById("typed-intro");
+					typedSafari.append("hey, i'm Alex Shi");
+				}
+				//change the project section background attachment in safari
       </script>
 
       <!-- include link to socials here -->

@@ -28,24 +28,42 @@ window.addEventListener('scroll', function() {
   var position = element.getBoundingClientRect();
 
   // checking whether fully visible
-  if(position.top >= 0 && position.bottom <= window.innerHeight) {
-  }
+	// don't do on safari (bug)
+	var browserResult = bowser.getParser(navigator.userAgent).getResult();
+	if (browserResult.browser.name == "Chrome") {
+		if(position.top >= 0 && position.bottom <= window.innerHeight) {
+		}
 
-  // checking for partial visibility
-  if(position.top < window.innerHeight && position.bottom >= 0) {
-    var mosaic = document.querySelector('#mosaic');
-    mosaic.className = mosaic.className.replace(
-      mosaic.className,
-      'bg-scroll'
-    );
-  }
-  else {
-    var mosaic = document.querySelector('#mosaic');
-    mosaic.className = mosaic.className.replace(
-      mosaic.className,
-      'bg-fixed'
-    );
-  }
+		// checking for partial visibility
+		if(position.top < window.innerHeight && position.bottom >= 0) {
+			var mosaic = document.querySelector('#mosaic');
+			mosaic.className = mosaic.className.replace(
+				mosaic.className,
+				'bg-scroll'
+			);
+		}
+		else {
+			var mosaic = document.querySelector('#mosaic');
+			mosaic.className = mosaic.className.replace(
+				mosaic.className,
+				'bg-fixed'
+			);
+		}
+	}
+	else if (browserResult.browser.name != "Safari") {
+		var mosaic = document.querySelector('#mosaic');
+		mosaic.className = mosaic.className.replace(
+			mosaic.className,
+			'bg-fixed'
+		);
+	}
+	else {
+		var mosaic = document.querySelector('#mosaic');
+		mosaic.className = mosaic.className.replace(
+			mosaic.className,
+			'bg-no-image'
+		);
+	}
 });
 
 

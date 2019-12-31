@@ -33,6 +33,10 @@
   -o-background-size: auto 100vh;
 }
 
+.bg-no-image {
+	background-size: 0 0 !important; /*hide the background (override id props)*/
+}
+
 .bg-fixed {
   background-attachment: fixed;
   transition: all 1s;
@@ -88,13 +92,10 @@
 @keyframes sweep-in-right {
   from {
     opacity: 0.0;
-    top: 75vh;
-		right: 25vh;
-		transform: rotate(60deg);
+		right: 90vh;
   }
   to {
     opacity: 1.0;
-    top: 0vh;
 		right: 0vh;
   }
 }
@@ -102,13 +103,10 @@
 @keyframes sweep-in-left {
   from {
     opacity: 0.0;
-    top: 75vh;
-		left: 25vh;
-		transform: rotate(-60deg);
+		left: 90vh;
   }
   to {
     opacity: 1.0;
-    top: 0vh;
 		left: 0vh;
   }
 }
