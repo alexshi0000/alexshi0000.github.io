@@ -112,13 +112,13 @@
 }
 
 .project-card-after-right {
-  animation: sweep-in-right 0.6s;
+  animation: sweep-in-right 0.65s;
   animation-timing-function: ease-out;
   opacity: 1.0;
 }
 
 .project-card-after-left {
-  animation: sweep-in-left 0.6s;
+  animation: sweep-in-left 0.65s;
   animation-timing-function: ease-out;
   opacity: 1.0;
 }

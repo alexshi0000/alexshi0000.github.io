@@ -4,6 +4,6 @@ window.addEventListener("resize", () => {
 
 	if (height <= width) { //simple redirection
 		console.log("redirected to desktop version");
-		window.location.replace("index.html");
+		window.location.replace("home.html");
 	}
 });

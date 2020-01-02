@@ -1,7 +1,7 @@
 section {
   position: relative;
   width:  100%;
-  height: 96%;
+  height: 95vh;
 }
 
 section::after {
@@ -11,209 +11,111 @@ section::after {
   content: '';
   width: 100%;
   height: 100%;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.25));
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 0.5));
 }
 
-.arrow-demo a {
+#down-arrow {
+	animation: dim-out 0.25s, bounce 2s infinite;
+	z-index: 99;
+	display: block;
   position: absolute;
-  bottom: 0.4vh;
-  left: 50%;
-  z-index: 2;
-  display: inline-block;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  color: #fff;
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
-  letter-spacing: .1em;
-  text-decoration: none;
-  opacity: 0.9;
-  transition: opacity .3s;
+	width: 5.6vh;
+	height: auto;
+	left: 50%;
+	margin-left: -2.8vh;
+	float: bottom;
+	top: 90%;
+	opacity: .7;
 }
 
-.arrow-demo a:hover {
-  opacity: .4;
-  cursor: pointer;
-}
-
-/*responsive arrows*/
-#down-arrow a {
-  padding-top: 60px;
-}
-
-#down-arrow a span {
+#down-arrow:hover {
+	animation: dim-in 0.25s, bounce 2s infinite;
+	z-index: 99;
+	display: block;
   position: absolute;
-  top: 0;
-  border: 0px solid #fff;
-  left: 50%;
-
-  -moz-box-shadow:    inset 0px 0px 1px 1px rgba(255,255,255,0.8),
-                            0px 0px 1px 1px rgba(255,255,255,0.8);
-  -webkit-box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.8),
-                            0px 0px 1px 1px rgba(255,255,255,0.8);
-  box-shadow:         inset 0px 0px 1px 1px rgba(255,255,255,0.8),
-                            0px 0px 1px 1px rgba(255,255,255,0.8);
-
-  border-radius: 50px;
-  box-sizing: border-box;
-
-  -webkit-transform: rotate(0);
-  transform: rotate(0);
+	width: 5.6vh;
+	height: auto;
+	left: 50%;
+	margin-left: -2.8vh;
+	float: bottom;
+	opacity: .3;
 }
 
-.down-arrow-size a span {
-  width: 2.8vh;
-  height: 5vh;
-  margin-left: -1.4vh;
+.bounce {
+	/*REMOVED*/
 }
 
-#down-arrow a span::before {
-  position: absolute;
-  top: 10px;
-  left: 50%;
-  content: '';
-  width: 0.6vh;
-  height: 0.6vh;
-  margin-left: -0.3vh;
-  background-color: #fff;
-  border-radius: 100%;
-  -webkit-animation: sdb10 2s infinite;
-  animation: sdb10 2s infinite;
-  box-sizing: border-box;
-}
-
-@-webkit-keyframes sdb10 {
-  0% {
-    -webkit-transform: translate(0, 0);
-    opacity: 0;
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
   }
   40% {
-    opacity: 1;
+    transform: translateY(-50%);
   }
-  80% {
-    -webkit-transform: translate(0, 1vh);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
+  60% {
+    transform: translateY(-25%);
   }
 }
 
-@keyframes sdb10 {
-  0% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translate(0, 1vh);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
+@keyframes dim-in {
+	from {
+		opacity: .7;
+	}
+	to {
+		opacity: .3;
+	}
 }
 
-/*==================================================================*/
-/*==================================================================*/
-/*================== return to top of page arrow ===================*/
-/*==================================================================*/
-/*==================================================================*/
-/*==================================================================*/
-/*==================================================================*/
-
-.up-demo a {
-  position: relative;
-  top: 8vh;
-  height: 10vh;
-  left: 50%;
-  z-index: 2;
-  display: inline-block;
-  -webkit-transform: translate(0, -50%);
-  transform: translate(0, -50%);
-  color: #fff;
-  font : normal 400 20px/1 'Josefin Sans', sans-serif;
-  letter-spacing: .1em;
-  text-decoration: none;
-  transition: opacity .3s;
+@keyframes dim-out {
+	from {
+		opacity: .3;
+	}
+	to {
+		opacity: .7;
+	}
 }
 
-.up-demo a:hover {
-  opacity: .4;
-  cursor: pointer;
-}
+/*up arrow*/
 
-#up-arrow a {
-  padding-bottom: 0%;
-}
-
-#up-arrow a span {
+#up-arrow {
+	animation: dim-out 0.25s, rev-bounce 2s infinite;
+	z-index: 99;
+	display: block;
   position: absolute;
-  top: 0;
-  border: 0px solid #000;
-  left: 50%;
-
-  -moz-box-shadow:    inset 0px 0px 1px 1px rgba(250,250,250,0.7),
-                            0px 0px 1px 1px rgba(250,250,250,0.7);
-  -webkit-box-shadow: inset 0px 0px 1px 1px rgba(250,250,250,0.7),
-                            0px 0px 1px 1px rgba(250,250,250,0.7);
-  box-shadow:         inset 0px 0px 1px 1px rgba(250,250,250,0.7),
-                            0px 0px 1px 1px rgba(250,250,250,0.7);
-
-  border-radius: 50px;
-  box-sizing: border-box;
+	width: 5.6vh;
+	height: auto;
+	left: 50%;
+	margin-left: -2.8vh;
+	float: bottom;
+	top: 88%;
+	opacity: .7;
 }
 
-@-webkit-keyframes sub10 {
-  0% {
-    -webkit-transform: translate(0, 1vh);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    -webkit-transform: translate(0, 0);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes sub10 {
-  0% {
-    transform: translate(0, 1vh);
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
-  80% {
-    transform: translate(0, 0);
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-#up-arrow a span::before {
+#up-arrow:hover {
+	animation: dim-in 0.25s, rev-bounce 2s infinite;
+	z-index: 99;
+	display: block;
   position: absolute;
-  top: 10px;
-  left: 50%;
-  content: '';
-  width: 0.6vh;
-  height: 0.6vh;
-  margin-left: -0.3vh;
-  background-color: #fff;
-  border-radius: 100%;
-  -webkit-animation: sub10 2s infinite;
-  animation: sub10 2s infinite;
-  box-sizing: border-box;
+	width: 5.6vh;
+	height: auto;
+	left: 50%;
+	margin-left: -2.8vh;
+	float: bottom;
+	opacity: .3;
 }
 
-#up-redirect-field {
-  margin: 0px;
+@keyframes rev-bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(50%);
+  }
+  60% {
+    transform: translateY(25%);
+  }
+}
+
+#up-arrow-field {
+	height: 12%;
 }

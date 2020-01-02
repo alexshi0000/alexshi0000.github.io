@@ -13,27 +13,33 @@
 
 		<!--meta tags-->
 		<meta property="og:image" content="../images/floating-desk-min.png">
+		<meta property="og:title" content="Alex Shi">
+		<meta property="og:site_name" content="Alex Shi">
+		<meta property="og:description" content="Hey! I'm Alex, a computer science student at the University of Waterloo. My interests include anything and everything tech related.">
+		<meta property="og:url" content="www.alexshi.me">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> <!--emoji char set-->
 
     <!--stylesheets-->
-    <link rel="stylesheet" href="mobile-css/fonts.css">
-    <link rel="stylesheet" href="mobile-css/index.css">
-    <link rel="stylesheet" href="mobile-css/scroll.css">
-    <link rel="stylesheet" href="mobile-css/content.css">
-    <link rel="stylesheet" href="mobile-css/socials.css">
-    <link rel="stylesheet" href="mobile-css/bootstrap-iso.css">
-    <link rel="stylesheet" href="mobile-css/footer.css">
-    <link rel="stylesheet" href="mobile-css/skills-section.css">
-    <link rel="stylesheet" href="mobile-css/skillbar.css">
-    <link rel="stylesheet" href="mobile-css/experience.css">
-    <link rel="stylesheet" href="mobile-css/timeline.css">
-    <link rel="stylesheet" href="mobile-css/projects.css">
-    <link rel="stylesheet" href="mobile-css/proj-cards.css">
-    <link rel="stylesheet" href="mobile-css/contact.css">
-    <link rel="stylesheet" href="mobile-css/bootstrap-css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/scroll.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/socials.css">
+    <link rel="stylesheet" href="css/bootstrap-iso.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/skills-section.css">
+    <link rel="stylesheet" href="css/skillbar.css">
+    <link rel="stylesheet" href="css/experience.css">
+    <link rel="stylesheet" href="css/timeline.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/proj-cards.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/bootstrap-css/bootstrap.min.css">
 
     <!--CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax/parallax.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bowser@2.5.3/es5.js"></script>
 
     <!--bootstrap-->
     <style>
@@ -47,7 +53,7 @@
     <script type="text/javascript" src="js/script.js"></script>
     <script type="text/javascript" src="js/typed.min.js"></script>
     <script type="text/javascript" src="js/bootstrap-js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="js/desktop-redir.js"></script>
+		<script type="text/javascript" src="js/mobile-redir.js"></script>
 
     <!---eye candy-->
     <link rel="shortcut icon" type="image/x-icon" href="images/name-logo-dark.png"/>
@@ -55,8 +61,14 @@
 
   <body onload="load_animators()">
     <div id="top-container" class="speed-1">
+      <img src="images/name-logo.png" id="logo" class="unselectable">
       <div id = "navbar-parent" class="unselectable">
         <ul id = "navbar-list" class="d-flex justify-content-center">
+          <li class = "navbar-entries">
+            <a class = "navbar-links" href="">
+              home
+            </a>
+          </li>
           <li class = "navbar-entries">
             <p class = "navbar-links" style="cursor:pointer;" onclick="scrolldown('#content',1100,1)">
               about
@@ -82,10 +94,33 @@
       <div class="propic-wrapper unselectable">
         <img src="images/propic-shadow.png" id="propic">
       </div>
-
-      <div id="intro-wrapper" class="intro-wrapper-center unselectable">
-        <span id="typed-intro" class="intro">hey, i'm Alex Shi</span>
+      <!--
+      <div class="arrow-wrapper unselectable">
+        <img src="images/down-arrow.png" id="arrow" onload="fade(this)" onclick="scrolldown()">
       </div>
+      -->
+
+      <div id="intro-wrapper" class="center-wrapper unselectable">
+        <span id="typed-intro" class="intro"></span>
+      </div>
+
+      <script>
+  			var result = bowser.getParser(navigator.userAgent).getResult();
+				if (result.browser.name != "Safari") {
+					var typed = new Typed('#typed-intro', {
+						strings: ["hey, i'm Alex Shi", "developer, maker, creative."],
+						backSpeed: 32,
+						typeSpeed: 42,
+						backDelay: 2000,
+						loop: !0,
+					});
+				}
+				else { //set a default for safari (re-add the text)
+					var typedSafari = document.getElementById("typed-intro");
+					typedSafari.append("hey, i'm Alex Shi");
+				}
+				//change the project section background attachment in safari
+      </script>
 
       <!-- include link to socials here -->
       <div id="socials" class="socials-wrapper unselectable">
@@ -98,6 +133,14 @@
           <li><a href="https://devpost.com/alexshi0000" target="_blank"><img class="social-img" src="images/logos/devpost-logo-white.png" alt="Devpost" /></a></li>
         </ul>
       </div>
+
+      <section class="unselectable">
+				<!--<a onclick="scrolldown('#content', 1100,1)"><span class="arrow-span"></span><span></span><span></span></a>-->
+				<a onclick="scrolldown('#content', 1100, 1)">
+					<img src="images/down-arrow.png" class="bounce unselectable" id="down-arrow">
+				</a>
+      </section>
+		
     </div> <!-- first page -->
 
     <div id="content">
@@ -480,12 +523,17 @@
           </div>
         </div>
 
-        <div id="up-redirect-field">
+				<div id="up-arrow-field">
+					<a onclick="scrollup('#top-container', 1400, 1)">
+						<img src="images/up-arrow.png" class="bounce unselectable" id="up-arrow">
+					</a>
+				</div>
+        <!--<div id="up-redirect-field">
           <div id="up-arrow" class="up-demo unselectable down-arrow-size">
             <a onclick="scrollup('#top-container',1400,1)"><span class="arrow-span"></span><span></span><span></span></a>
           </div>
-        </div>
-      </div> <!--end of-->
+				</div>-->
+      </div> <!--end of contact section-->
 
       <!--footer-->
       <div id="footer">

@@ -66,15 +66,18 @@ window.addEventListener('scroll', function() {
 	}
 });
 
-
 // ANIMATION
-
-
 
 function load_animators() {
   load_progress();
   load_timeline();
   load_projects();
+
+	var browserResult = bowser.getParser(navigator.userAgent).getResult();
+	var topContainer = document.querySelector('#top-container');
+	if (browserResult.browser.name == "Safari") {
+		topContainer.classList.add('fixed-background');
+	}
 }
 
 function load_progress() {
@@ -158,7 +161,7 @@ function load_projects() {
     function checkPosition() {
       for (var i = 0; i < elems.length; i++) {
         var positionFromTop = elems[i].getBoundingClientRect().top;
-        if (positionFromTop - windowHeight <= -windowHeight / 3 ) {
+        if (positionFromTop - windowHeight <= -windowHeight / 4 ) {
           if (i % 2 === 0) {
             elems[i].className = elems[i].className.replace(
               elems[i].className.split(' ')[1],
