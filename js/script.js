@@ -69,6 +69,13 @@ window.addEventListener('scroll', function() {
 // ANIMATION
 
 function load_animators() {
+	//discriminate for safari
+	var browserResult = bowser.getParser(navigator.userAgent).getResult();
+	var topContainer = document.querySelector('#top-container');
+	if (browserResult.browser.name == "Safari") {
+		topContainer.classList.add('fixed-background');
+	}
+
 	//set entire page visible
 	document.getElementById("page").style.display = "block";
 	document.getElementById("loading").style.display = "none";
@@ -76,12 +83,6 @@ function load_animators() {
   load_progress();
   load_timeline();
   load_projects();
-	//discriminate for safari
-	var browserResult = bowser.getParser(navigator.userAgent).getResult();
-	var topContainer = document.querySelector('#top-container');
-	if (browserResult.browser.name == "Safari") {
-		topContainer.classList.add('fixed-background');
-	}
 }
 
 function load_progress() {

@@ -80,16 +80,16 @@ img {
 .navbar-links {
   font-size: 190%;
   font-family: 'Poiret One';
-  color: rgba(255,255,255,0.4);
+  color: rgba(255,255,255,0.45);
 
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: rgba(255,255,255,0.4);
+  -webkit-text-stroke-color: rgba(255,255,255,0.45);
 
   -moz-text-stroke-width: 1px;
-  -moz-text-stroke-color: rgba(255,255,255,0.4);
+  -moz-text-stroke-color: rgba(255,255,255,0.45);
 
   -o-text-stroke-width: 1px;
-  -o-text-stroke-color: rgba(255,255,255,0.4);
+  -o-text-stroke-color: rgba(255,255,255,0.45);
   transition: all 0.25s;
 }
 
@@ -111,13 +111,14 @@ img {
 
 /*propic*/
 #propic {
+	z-index: 99;
   height: auto;
-  width:  40vh;
+  width:  38vh;
   left: 50%;
   margin-top: -30vh;
-  margin-left: -20vh;
+  margin-left: -19vh;
   position: absolute;
-  top: 50%;
+  top: 52%;
 }
 
 .propic-wrapper {
