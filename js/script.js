@@ -70,11 +70,9 @@ window.addEventListener('scroll', function() {
 
 function load_animators() {
 	//set entire page visible
-	window.addEventListener('load', () => {
-		document.getElementById("page").style.display = "block";
-		document.getElementById("loading").style.display = "none";
-	});
-	
+	document.getElementById("page").style.display = "block";
+	document.getElementById("loading").style.display = "none";
+
   load_progress();
   load_timeline();
   load_projects();
