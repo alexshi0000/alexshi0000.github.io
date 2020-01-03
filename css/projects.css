@@ -1,4 +1,5 @@
 #project-container { /*big boss*/
+	overflow: hidden; /*shifting right and left animations cause overflow*/
   background-color: #eee;
 
   position: relative;
@@ -92,22 +93,22 @@
 @keyframes sweep-in-right {
   from {
     opacity: 0.0;
-		right: 90vh;
+		transform: translate(90vh, 0);
   }
   to {
     opacity: 1.0;
-		right: 0vh;
+		transform: translate(0vh, 0);
   }
 }
 
 @keyframes sweep-in-left {
   from {
     opacity: 0.0;
-		left: 90vh;
+		transform: translate(-90vh, 0);
   }
   to {
     opacity: 1.0;
-		left: 0vh;
+		transform: translate(0vh, 0);
   }
 }
 

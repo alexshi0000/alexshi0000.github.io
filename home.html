@@ -60,490 +60,502 @@
   </head>
 
   <body onload="load_animators()">
-    <div id="top-container" class="speed-1">
-      <img src="images/name-logo.png" id="logo" class="unselectable">
-      <div id = "navbar-parent" class="unselectable">
-        <ul id = "navbar-list" class="d-flex justify-content-center">
-          <li class = "navbar-entries">
-            <a class = "navbar-links" href="">
-              home
-            </a>
-          </li>
-          <li class = "navbar-entries">
-            <p class = "navbar-links" style="cursor:pointer;" onclick="scrolldown('#content',1100,1)">
-              about
-            </p>
-          </li> <!--when in a different page remove scroll-->
-          <li class = "navbar-entries">
-            <a class = "navbar-links" href="./pdfs/resume.pdf" target="_blank">
-              resume
-            </a>
-          </li>
-          <li class = "navbar-entries">
-            <p class = "navbar-links" style="cursor:pointer;" onclick="scrolldown('#project-container',1100,1)">
-              projects
-            </p>
-          </li>
-          <li class = "navbar-entries">
-            <p class = "navbar-links" style="cursor:pointer;" onclick="scrolldown('#contact-container',1400,1)">
-              contact
-            </p>
-          </li>
-        </ul>
-      </div>
-      <div class="propic-wrapper unselectable">
-        <img src="images/propic-shadow.png" id="propic">
-      </div>
-      <!--
-      <div class="arrow-wrapper unselectable">
-        <img src="images/down-arrow.png" id="arrow" onload="fade(this)" onclick="scrolldown()">
-      </div>
-      -->
-
-      <div id="intro-wrapper" class="center-wrapper unselectable">
-        <span id="typed-intro" class="intro"></span>
-      </div>
-
-      <script>
-  			var result = bowser.getParser(navigator.userAgent).getResult();
-				if (result.browser.name != "Safari") {
-					var typed = new Typed('#typed-intro', {
-						strings: ["hey, i'm Alex Shi", "developer and creative."],
-						backSpeed: 32,
-						typeSpeed: 42,
-						backDelay: 2000,
-						loop: !0,
-					});
-				}
-				else { //set a default for safari (re-add the text)
-					var typedSafari = document.getElementById("typed-intro");
-					typedSafari.append("hey, i'm Alex Shi");
-				}
-				//change the project section background attachment in safari
-      </script>
-
-      <!-- include link to socials here -->
-      <div id="socials" class="socials-wrapper unselectable">
-        <ul id="horizontal-list">
-          <li><a href="https://github.com/alexshi0000" target="_blank"><img class="social-img" src="images/logos/github-logo-white.png" alt="Github" /></a></li>
-          <li><a href="https://www.linkedin.com/in/alexshi0000/" target="_blank"><img class="social-img" src="images/logos/linkedin-logo-white.png" alt="Linkedin" /></a></li>
-          <li><a href="https://mailto:yuanshi948@gmail.com" target="_blank"><img class="social-img" src="images/logos/email-alt-white.png" alt="Email" /></a></li>
-          <li><a href="https://www.hackerrank.com/alphaHaxor" target="_blank"><img class="social-img" src="images/logos/HackerRank_logo.png" alt="hackerrank" /></a></li>
-          <li><a href="https://twitter.com/alexshi0000" target="_blank"><img class="social-img" src="images/logos/twitter-logo-black.png" alt="Twitter" /></a></li>
-          <li><a href="https://devpost.com/alexshi0000" target="_blank"><img class="social-img" src="images/logos/devpost-logo-white.png" alt="Devpost" /></a></li>
-        </ul>
-      </div>
-
-      <section class="unselectable">
-				<!--<a onclick="scrolldown('#content', 1100,1)"><span class="arrow-span"></span><span></span><span></span></a>-->
-				<a onclick="scrolldown('#content', 1100, 1)">
-					<img src="images/down-arrow.png" class="bounce unselectable" id="down-arrow">
-				</a>
-      </section>
-		
-    </div> <!-- first page -->
-
-    <div id="content">
-      <div id="about-me-paragraph-container">
-        <h1 id="about-me-header" class="content-header">About Me</h1>
-
-        <!-- picture and some contact infomation -->
-        <!--<span style="display: inline;">
-          <img src="images/aboutpic.jpg">
-          <p class="about-me-cont">
-            add contact info
-          </p>
-        </span>-->
-
-        <span class="about-me-cont">
-          <img src="images/intropic2.jpg" alt="" class="unselectable">
-          <div id="contact-blocks">
-            <div class="card" style="width: 18rem;">
-              <div class="card-header">
-                <p style="display: inline; font-weight: bold">Education&nbsp</p>
-                <p style="display: inline">Honours Computer Science @ University of Waterloo</p>
-              </div>
-              <div class="centered-list-group">
-                <ul class="list-group list-group-flush">
-
-                  <li class="list-group-item">
-                    <p style="display: inline; font-weight: bold">Email&nbsp</p>
-                    <p style="display: inline;">yuanshi948@gmail.com</p>
-                  </li>
-
-                  <li class="list-group-item">
-                    <p style="display: inline; font-weight: bold">Linkedin&nbsp</p>
-                    <p style="display: inline;">alexshi0000</p>
-                  </li>
-
-                  <style>
-                    .btn-square { border-radius: 0; }
-                  </style>
-
-                  <li class="list-group-item" style="text-align: center">
-                    <a href="./pdfs/resume.pdf" target="_blank">
-                      <button type="button" class="btn btn-outline-dark btn-square">
-                        Download Resume
-                      </button>
-                    </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </span>
-
-        <p class="about-me-paragraph">
-          Hey! I'm Alex, a computer science student at the University of Waterloo. My interests include anything and
-          everything tech related. I believe that software is the easiest way to make my mark in this world.
-          I'm deeply passionate about building products that are elegant, functional, and disruptive.
-        </p>
-        <br/>
-        <p class="about-me-paragraph">
-          Come along and let me take you through my journey so far!
-        </p>
-      </div> <!-- about me -->
-
-      <!-- Adding our skills components here -->
-      <div id="skills-section-container">
-        <div id="skills-section-wrapper">
-          <h1 id="skills-header" class="content-header content-header-light">Skills</h1>
-        </div>
-
-        <span id="skill-wrapper">
-          <li class="skill-list">
-            <ul>
-              <h1 class="list-title">Languages</h1>
-            </ul>
-            <ul class="skill-item">
-              <div class="skill-bar">
-                <h2 class="skill-title">C &nbsp•&nbsp C++</h2>
-                <div class="skill-container">
-                  <div class="skill cpp-skill null"></div> <!--null is a placeholder-->
-                </div>
-              </div>
-            </ul>
-            <ul class="skill-item">
-              <div class="skill-bar">
-                <h2 class="skill-title">HTML &nbsp•&nbsp CSS &nbsp•&nbsp JavaScript</h2>
-                <div class="skill-container">
-                  <div class="skill html-skill null"></div>
-                </div>
-              </div>
-            </ul>
-            <ul class="skill-item">
-              <div class="skill-bar">
-                <h2 class="skill-title">Kotlin &nbsp•&nbsp Java</h2>
-                <div class="skill-container">
-                  <div class="skill java-skill null"></div>
-                </div>
-              </div>
-            </ul>
-            <ul class="skill-item">
-              <div class="skill-bar">
-                <h2 class="skill-title">Python</h2>
-                <div class="skill-container">
-                  <div class="skill python-skill null"></div>
-                </div>
-              </div>
-            </ul>
-            <ul class="skill-item">
-              <div class="skill-bar">
-                <h2 class="skill-title">Scheme &nbsp•&nbsp Common Lisp</h2>
-                <div class="skill-container">
-                  <div class="skill lisp-skill null"></div>
-                </div>
-              </div>
-            </ul>
-          </li>
-
-          <li class="skill-list">
-            <ul>
-              <h1 class="list-title">Frameworks / Tools</h1>
-            </ul>
-            <ul class="skill-item">
-              <div class="skill-bar">
-                <h2 class="skill-title">OpenMP &nbsp•&nbsp CUDA &nbsp•&nbsp OpenGL</h2>
-                <div class="skill-container">
-                  <div class="skill cuda-skill null"></div>
-                </div>
-              </div>
-            </ul>
-            <ul class="skill-item">
-              <div class="skill-bar">
-                <h2 class="skill-title">ReactJS &nbsp•&nbsp Redux &nbsp•&nbsp AngularJS</h2>
-                <div class="skill-container">
-                  <div class="skill react-skill null"></div>
-                </div>
-              </div>
-            </ul>
-            <ul class="skill-item">
-              <div class="skill-bar">
-                <h2 class="skill-title">Spring Boot</h2>
-                <div class="skill-container">
-                  <div class="skill spring-skill null"></div>
-                </div>
-              </div>
-            </ul>
-            <ul class="skill-item">
-              <div class="skill-bar">
-                <h2 class="skill-title">Flask &nbsp•&nbsp NumPy &nbsp•&nbsp Pandas &nbsp•&nbsp ML</h2>
-                <div class="skill-container">
-                  <div class="skill flask-skill null"></div>
-                </div>
-              </div>
-            </ul>
-            <ul class="skill-item">
-              <div class="skill-bar">
-                <h2 class="skill-title">Node.js &nbsp•&nbsp Express.js &nbsp•&nbsp MongoDB</h2>
-                <div class="skill-container">
-                  <div class="skill node-skill null"></div>
-                </div>
-              </div>
-            </ul>
-          </li>
-        </span>
-      </div> <!-- skills section -->
-
-      <div id="experience-section-container">
-        <div id="experience-section-wrapper">
-          <h1 id="experience-header" class="content-header">Timeline</h1>
-        </div>
-
-        <div id="timeline-body">
-          <div class="timeline">
-            <div class="timeline-entry null">
-              <div class="timeline-title">
-                <h3>May - Aug 2019</h3>
-                <p>Software Developer Intern, Deloitte</p>
-              </div>
-              <div class="timeline-body">
-                <p>Worked on building software prototypes at the Deloitte DSpace Innovation Lab, Communitech</p>
-                <ul>
-                  <li>Developed modern, dynamic web applications using React and Redux</li>
-                  <li>Wrote Kotlin backend APIs with Spring framework</li>
-                  <li>Created machine learning models in Python to detect anomalies on the blockchain network</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-entry null">
-              <div class="timeline-title">
-                <h3>Apr - July 2019</h3>
-                <p>Path Planning Engineer, Watonomous</p>
-              </div>
-              <div class="timeline-body">
-                <p>Worked on the path planning software team at Watonomous</p>
-                <ul>
-                  <li>Watonomous is a student design team aimed at building a level 4 autonomous vehicle</li>
-                  <li>Built various input controllers for path planning simulation in C++</li>
-                  <li>Used ROS (Robot Operating System), CMake, and Git version control extensively</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-entry null">
-              <div class="timeline-title">
-                <h3>Sep - May 2018</h3>
-                <p>Exec, Bloor Computer Science Club</p>
-              </div>
-              <div class="timeline-body">
-                <p>Served as an executive member of the Bloor CI Computer Science Club</p>
-                <ul>
-                  <li>Prepared students for ongoing hackathons and competitive programming competitions</li>
-                  <li>Taught lessons on design thinking and rapid protyping techniques</li>
-                  <li>Published problem sets and solutions online</li>
-                </ul>
-              </div>
-            </div>
-            <div class="timeline-entry null">
-              <div class="timeline-title">
-                <h3>Mar - Apr 2017</h3>
-                <p>Internet Application Mentor, Toronto Public Library</p>
-              </div>
-              <div class="timeline-body">
-                <p>Volunteered as an internet application mentor at the Toronto Public Library</p>
-                <ul>
-                  <li>Taught workshop attendees about available software at the library</li>
-                  <li>Provided one-on-one help with using the online and offline services</li>
-                  <li>Engaged with audience members during workshop presentations</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!-- timeline -->
-
-      <div id="project-container">
-        <div class="project-wrapper"> <!--enforce width-->
-          <h1 id="project-header" class="content-header">Projects</h1>
-        </div>
-
-        <div id="mosaic" class="null">
-          <div class="project-card-wrapper">
-
-            <div id="galaxy" class="project-card null">
-              <div class="content-overlay">
-                <h1 class="project-title">
-                  OPENACC &nbsp GALAXY
-                </h1>
-                <p class="project-description">
-                  NBody simulation accelerated on a general-purpose GPU
-                </p>
-                <a href="https://github.com/alexshi0000/OpenACC_NBody_Galaxy" target="_blank">
-                  <img class="click-arrow" src="images/right-arrow.png">
-                </a>
-              </div>
-            </div>
-
-            <div id="metro" class="project-card null">
-              <div class="content-overlay">
-                <h1 class="project-title">
-                  METROPLOTTER
-                </h1>
-                <p class="project-description">
-                  Function plotting application that's Metro UI themed
-                </p>
-                <a href="https://github.com/alexshi0000/MetroPlotter" target="_blank">
-                  <img class="click-arrow" src="images/right-arrow.png">
-                </a>
-              </div>
-            </div>
-
-            <div id="chat" class="project-card null">
-              <div class="content-overlay-light">
-                <h1 class="project-title-dark">
-                  NODE.JS &nbsp CHAT
-                </h1>
-                <p class="project-description-dark">
-                  Elegant, live chatroom powered with Socket.IO
-                </p>
-                <a href="https://github.com/alexshi0000/Sleck" target="_blank">
-                  <img class="click-arrow-dark" src="images/right-arrow.jpg">
-                </a>
-              </div>
-            </div>
-
-            <div id="tetris" class="project-card null">
-              <div class="content-overlay">
-                <h1 class="project-title">
-                  TETRIS &nbsp AI
-                </h1>
-                <p class="project-description">
-                  Tetris played by a custom genetic algorithm
-                </p>
-                <a href="https://github.com/alexshi0000/Tetris-AI" target="_blank">
-                  <img class="click-arrow" src="images/right-arrow.png">
-                </a>
-              </div>
-            </div>
-
-            <div id="fractree" class="project-card null">
-              <div class="content-overlay">
-                <h1 class="project-title">
-                  FRACTAL &nbsp TREES
-                </h1>
-                <p class="project-description">
-                  Design a unique fractal tree, the possibilities are endless
-                </p>
-                <a href="https://github.com/alexshi0000/FractalTree" target="_blank">
-                  <img class="click-arrow" src="images/right-arrow.png">
-                </a>
-              </div>
-            </div>
-
-            <div id="moziq" class="project-card null">
-              <div class="content-overlay">
-                <h1 class="project-title">
-                  MOSIAQUE
-                </h1>
-                <p class="project-description">
-                  Build colorful mosaics out of a a picture album
-                </p>
-                <a href="https://github.com/alexshi0000/Mosiaque" target="_blank">
-                  <img class="click-arrow" src="images/right-arrow.png">
-                </a>
-              </div>
-            </div>
-
-            <div id="autodeck" class="project-card null">
-              <div class="content-overlay-light">
-                <h1 class="project-title-dark">
-                  AUTODECK
-                </h1>
-                <p class="project-description-dark">
-                  Build dynamically generated content by simply speaking
-                </p>
-                <a href="https://github.com/alexshi0000/AutoDeck" target="_blank">
-                  <img class="click-arrow-dark" src="images/right-arrow.jpg">
-                </a>
-              </div>
-            </div>
-
-            <div id="mental" class="project-card null">
-              <div class="content-overlay">
-                <h1 class="project-title">
-                  E-MOTION
-                </h1>
-                <p class="project-description">
-                  NLP mental health journal
-                </p>
-                <a href="https://e-motion-htn.herokuapp.com/landing" target="_blank">
-                  <img class="click-arrow" src="images/right-arrow.png">
-                </a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> <!--projects end here-->
-
-			<!--TODO!!!! in the future add a gallery section here.-->
-
-      <div id="contact-container">
-        <div class="contact-wrapper"> <!--enforce width-->
-          <h1 id="contact-header" class="content-header content-header-light">Contact</h1>
-
-          <div class="contact-input-container">
-            <form action="mailto:yuanshi948@gmail.com" method="post" enctype="text/plain">
-              <label for="name">Name</label>
-              <input class="contact-input" type="text" id="name" name="name" placeholder="Your name">
-
-              <label for="email">Email</label>
-              <input class="contact-input" type="text" id="email" name="email" placeholder="Your email">
-
-              <div id="chat-field">
-                <label for="subject">Subject</label>
-                <div id="chat-holder">
-                  <textarea id="subject" name="subject" placeholder="Let's chat. Write something"></textarea>
-                </div>
-              </div>
-
-              <div id="button-holder">
-                <input class="contact-input" type="submit" value="Submit">
-              </div>
-            </form>
-          </div>
-        </div>
-
-				<div id="up-arrow-field">
-					<a onclick="scrollup('#top-container', 1400, 1)">
-						<img src="images/up-arrow.png" class="bounce unselectable" id="up-arrow">
-					</a>
+		<div id="loading"
+			style="
+  			background-image: url('images/loading.gif');
+				height: 64px;
+				width: 64px;
+				position: absolute;
+   			top: 50%;
+   			left: 50%;
+   			margin-left: -32px;
+   			margin-top: -32px;
+			"
+		></div>
+		<div id="page" style="display:none">
+			<div id="top-container" class="speed-1">
+				<img src="images/name-logo.png" id="logo" class="unselectable">
+				<div id = "navbar-parent" class="unselectable">
+					<ul id = "navbar-list" class="d-flex justify-content-center">
+						<li class = "navbar-entries">
+							<a class = "navbar-links" href="">
+								home
+							</a>
+						</li>
+						<li class = "navbar-entries">
+							<p class = "navbar-links" style="cursor:pointer;" onclick="scrolldown('#content',1100,1)">
+								about
+							</p>
+						</li> <!--when in a different page remove scroll-->
+						<li class = "navbar-entries">
+							<a class = "navbar-links" href="./pdfs/resume.pdf" target="_blank">
+								resume
+							</a>
+						</li>
+						<li class = "navbar-entries">
+							<p class = "navbar-links" style="cursor:pointer;" onclick="scrolldown('#project-container',1100,1)">
+								projects
+							</p>
+						</li>
+						<li class = "navbar-entries">
+							<p class = "navbar-links" style="cursor:pointer;" onclick="scrolldown('#contact-container',1400,1)">
+								contact
+							</p>
+						</li>
+					</ul>
 				</div>
-        <!--<div id="up-redirect-field">
-          <div id="up-arrow" class="up-demo unselectable down-arrow-size">
-            <a onclick="scrollup('#top-container',1400,1)"><span class="arrow-span"></span><span></span><span></span></a>
-          </div>
-				</div>-->
-      </div> <!--end of contact section-->
+				<div class="propic-wrapper unselectable">
+					<img src="images/propic-shadow.png" id="propic">
+				</div>
+				<!--
+				<div class="arrow-wrapper unselectable">
+					<img src="images/down-arrow.png" id="arrow" onload="fade(this)" onclick="scrolldown()">
+				</div>
+				-->
 
-      <!--footer-->
-      <div id="footer">
-        <span id="footer-message">
-          <p>Website made by Alex Shi with plenty of ☕</p>
-        </span>
-        <p id="copyright-notice">Copyright © 2019. All rights reserved</p>
-      </div>
+				<div id="intro-wrapper" class="center-wrapper unselectable">
+					<span id="typed-intro" class="intro"></span>
+				</div>
 
-    </div> <!-- end of content -->
+				<script>
+					var result = bowser.getParser(navigator.userAgent).getResult();
+					if (result.browser.name != "Safari") {
+						var typed = new Typed('#typed-intro', {
+							strings: ["hey, i'm Alex Shi", "developer and creative."],
+							backSpeed: 32,
+							typeSpeed: 42,
+							backDelay: 2000,
+							loop: !0,
+						});
+					}
+					else { //set a default for safari (re-add the text)
+						var typedSafari = document.getElementById("typed-intro");
+						typedSafari.append("hey, i'm Alex Shi");
+					}
+					//change the project section background attachment in safari
+				</script>
 
+				<!-- include link to socials here -->
+				<div id="socials" class="socials-wrapper unselectable">
+					<ul id="horizontal-list">
+						<li><a href="https://github.com/alexshi0000" target="_blank"><img class="social-img" src="images/logos/github-logo-white.png" alt="Github" /></a></li>
+						<li><a href="https://www.linkedin.com/in/alexshi0000/" target="_blank"><img class="social-img" src="images/logos/linkedin-logo-white.png" alt="Linkedin" /></a></li>
+						<li><a href="https://mailto:yuanshi948@gmail.com" target="_blank"><img class="social-img" src="images/logos/email-alt-white.png" alt="Email" /></a></li>
+						<li><a href="https://www.hackerrank.com/alphaHaxor" target="_blank"><img class="social-img" src="images/logos/HackerRank_logo.png" alt="hackerrank" /></a></li>
+						<li><a href="https://twitter.com/alexshi0000" target="_blank"><img class="social-img" src="images/logos/twitter-logo-black.png" alt="Twitter" /></a></li>
+						<li><a href="https://devpost.com/alexshi0000" target="_blank"><img class="social-img" src="images/logos/devpost-logo-white.png" alt="Devpost" /></a></li>
+					</ul>
+				</div>
+
+				<section class="unselectable">
+					<!--<a onclick="scrolldown('#content', 1100,1)"><span class="arrow-span"></span><span></span><span></span></a>-->
+					<a onclick="scrolldown('#content', 1100, 1)">
+						<img src="images/down-arrow.png" class="bounce unselectable" id="down-arrow">
+					</a>
+				</section>
+			
+			</div> <!-- first page -->
+
+			<div id="content">
+				<div id="about-me-paragraph-container">
+					<h1 id="about-me-header" class="content-header">About Me</h1>
+
+					<!-- picture and some contact infomation -->
+					<!--<span style="display: inline;">
+						<img src="images/aboutpic.jpg">
+						<p class="about-me-cont">
+							add contact info
+						</p>
+					</span>-->
+
+					<span class="about-me-cont">
+						<img src="images/intropic2.jpg" alt="" class="unselectable">
+						<div id="contact-blocks">
+							<div class="card" style="width: 18rem;">
+								<div class="card-header">
+									<p style="display: inline; font-weight: bold">Education&nbsp</p>
+									<p style="display: inline">Honours Computer Science @ University of Waterloo</p>
+								</div>
+								<div class="centered-list-group">
+									<ul class="list-group list-group-flush">
+
+										<li class="list-group-item">
+											<p style="display: inline; font-weight: bold">Email&nbsp</p>
+											<p style="display: inline;">yuanshi948@gmail.com</p>
+										</li>
+
+										<li class="list-group-item">
+											<p style="display: inline; font-weight: bold">Linkedin&nbsp</p>
+											<p style="display: inline;">alexshi0000</p>
+										</li>
+
+										<style>
+											.btn-square { border-radius: 0; }
+										</style>
+
+										<li class="list-group-item" style="text-align: center">
+											<a href="./pdfs/resume.pdf" target="_blank">
+												<button type="button" class="btn btn-outline-dark btn-square">
+													Download Resume
+												</button>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</span>
+
+					<p class="about-me-paragraph">
+						Hey! I'm Alex, a computer science student at the University of Waterloo. My interests include anything and
+						everything tech related. I believe that software is the easiest way to make my mark in this world.
+						I'm deeply passionate about building products that are elegant, functional, and disruptive.
+					</p>
+					<br/>
+					<p class="about-me-paragraph">
+						Come along and let me take you through my journey so far!
+					</p>
+				</div> <!-- about me -->
+
+				<!-- Adding our skills components here -->
+				<div id="skills-section-container">
+					<div id="skills-section-wrapper">
+						<h1 id="skills-header" class="content-header content-header-light">Skills</h1>
+					</div>
+
+					<span id="skill-wrapper">
+						<li class="skill-list">
+							<ul>
+								<h1 class="list-title">Languages</h1>
+							</ul>
+							<ul class="skill-item">
+								<div class="skill-bar">
+									<h2 class="skill-title">C &nbsp•&nbsp C++</h2>
+									<div class="skill-container">
+										<div class="skill cpp-skill null"></div> <!--null is a placeholder-->
+									</div>
+								</div>
+							</ul>
+							<ul class="skill-item">
+								<div class="skill-bar">
+									<h2 class="skill-title">HTML &nbsp•&nbsp CSS &nbsp•&nbsp JavaScript</h2>
+									<div class="skill-container">
+										<div class="skill html-skill null"></div>
+									</div>
+								</div>
+							</ul>
+							<ul class="skill-item">
+								<div class="skill-bar">
+									<h2 class="skill-title">Kotlin &nbsp•&nbsp Java</h2>
+									<div class="skill-container">
+										<div class="skill java-skill null"></div>
+									</div>
+								</div>
+							</ul>
+							<ul class="skill-item">
+								<div class="skill-bar">
+									<h2 class="skill-title">Python</h2>
+									<div class="skill-container">
+										<div class="skill python-skill null"></div>
+									</div>
+								</div>
+							</ul>
+							<ul class="skill-item">
+								<div class="skill-bar">
+									<h2 class="skill-title">Scheme &nbsp•&nbsp Common Lisp</h2>
+									<div class="skill-container">
+										<div class="skill lisp-skill null"></div>
+									</div>
+								</div>
+							</ul>
+						</li>
+
+						<li class="skill-list">
+							<ul>
+								<h1 class="list-title">Frameworks / Tools</h1>
+							</ul>
+							<ul class="skill-item">
+								<div class="skill-bar">
+									<h2 class="skill-title">OpenMP &nbsp•&nbsp CUDA &nbsp•&nbsp OpenGL</h2>
+									<div class="skill-container">
+										<div class="skill cuda-skill null"></div>
+									</div>
+								</div>
+							</ul>
+							<ul class="skill-item">
+								<div class="skill-bar">
+									<h2 class="skill-title">ReactJS &nbsp•&nbsp Redux &nbsp•&nbsp AngularJS</h2>
+									<div class="skill-container">
+										<div class="skill react-skill null"></div>
+									</div>
+								</div>
+							</ul>
+							<ul class="skill-item">
+								<div class="skill-bar">
+									<h2 class="skill-title">Spring Boot</h2>
+									<div class="skill-container">
+										<div class="skill spring-skill null"></div>
+									</div>
+								</div>
+							</ul>
+							<ul class="skill-item">
+								<div class="skill-bar">
+									<h2 class="skill-title">Flask &nbsp•&nbsp NumPy &nbsp•&nbsp Pandas &nbsp•&nbsp ML</h2>
+									<div class="skill-container">
+										<div class="skill flask-skill null"></div>
+									</div>
+								</div>
+							</ul>
+							<ul class="skill-item">
+								<div class="skill-bar">
+									<h2 class="skill-title">Node.js &nbsp•&nbsp Express.js &nbsp•&nbsp MongoDB</h2>
+									<div class="skill-container">
+										<div class="skill node-skill null"></div>
+									</div>
+								</div>
+							</ul>
+						</li>
+					</span>
+				</div> <!-- skills section -->
+
+				<div id="experience-section-container">
+					<div id="experience-section-wrapper">
+						<h1 id="experience-header" class="content-header">Timeline</h1>
+					</div>
+
+					<div id="timeline-body">
+						<div class="timeline">
+							<div class="timeline-entry null">
+								<div class="timeline-title">
+									<h3>May - Aug 2019</h3>
+									<p>Software Developer Intern, Deloitte</p>
+								</div>
+								<div class="timeline-body">
+									<p>Worked on building software prototypes at the Deloitte DSpace Innovation Lab, Communitech</p>
+									<ul>
+										<li>Developed modern, dynamic web applications using React and Redux</li>
+										<li>Wrote Kotlin backend APIs with Spring framework</li>
+										<li>Created machine learning models in Python to detect anomalies on the blockchain network</li>
+									</ul>
+								</div>
+							</div>
+							<div class="timeline-entry null">
+								<div class="timeline-title">
+									<h3>Apr - July 2019</h3>
+									<p>Path Planning Engineer, Watonomous</p>
+								</div>
+								<div class="timeline-body">
+									<p>Worked on the path planning software team at Watonomous</p>
+									<ul>
+										<li>Watonomous is a student design team aimed at building a level 4 autonomous vehicle</li>
+										<li>Built various input controllers for path planning simulation in C++</li>
+										<li>Used ROS (Robot Operating System), CMake, and Git version control extensively</li>
+									</ul>
+								</div>
+							</div>
+							<div class="timeline-entry null">
+								<div class="timeline-title">
+									<h3>Sep - May 2018</h3>
+									<p>Exec, Bloor Computer Science Club</p>
+								</div>
+								<div class="timeline-body">
+									<p>Served as an executive member of the Bloor CI Computer Science Club</p>
+									<ul>
+										<li>Prepared students for ongoing hackathons and competitive programming competitions</li>
+										<li>Taught lessons on design thinking and rapid protyping techniques</li>
+										<li>Published problem sets and solutions online</li>
+									</ul>
+								</div>
+							</div>
+							<div class="timeline-entry null">
+								<div class="timeline-title">
+									<h3>Mar - Apr 2017</h3>
+									<p>Internet Application Mentor, Toronto Public Library</p>
+								</div>
+								<div class="timeline-body">
+									<p>Volunteered as an internet application mentor at the Toronto Public Library</p>
+									<ul>
+										<li>Taught workshop attendees about available software at the library</li>
+										<li>Provided one-on-one help with using the online and offline services</li>
+										<li>Engaged with audience members during workshop presentations</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!-- timeline -->
+
+				<div id="project-container">
+					<div class="project-wrapper"> <!--enforce width-->
+						<h1 id="project-header" class="content-header">Projects</h1>
+					</div>
+
+					<div id="mosaic" class="null">
+						<div class="project-card-wrapper">
+
+							<div id="galaxy" class="project-card null">
+								<div class="content-overlay">
+									<h1 class="project-title">
+										OPENACC &nbsp GALAXY
+									</h1>
+									<p class="project-description">
+										NBody simulation accelerated on a general-purpose GPU
+									</p>
+									<a href="https://github.com/alexshi0000/OpenACC_NBody_Galaxy" target="_blank">
+										<img class="click-arrow" src="images/right-arrow.png">
+									</a>
+								</div>
+							</div>
+
+							<div id="metro" class="project-card null">
+								<div class="content-overlay">
+									<h1 class="project-title">
+										METROPLOTTER
+									</h1>
+									<p class="project-description">
+										Function plotting application that's Metro UI themed
+									</p>
+									<a href="https://github.com/alexshi0000/MetroPlotter" target="_blank">
+										<img class="click-arrow" src="images/right-arrow.png">
+									</a>
+								</div>
+							</div>
+
+							<div id="chat" class="project-card null">
+								<div class="content-overlay-light">
+									<h1 class="project-title-dark">
+										NODE.JS &nbsp CHAT
+									</h1>
+									<p class="project-description-dark">
+										Elegant, live chatroom powered with Socket.IO
+									</p>
+									<a href="https://github.com/alexshi0000/Sleck" target="_blank">
+										<img class="click-arrow-dark" src="images/right-arrow.jpg">
+									</a>
+								</div>
+							</div>
+
+							<div id="tetris" class="project-card null">
+								<div class="content-overlay">
+									<h1 class="project-title">
+										TETRIS &nbsp AI
+									</h1>
+									<p class="project-description">
+										Tetris played by a custom genetic algorithm
+									</p>
+									<a href="https://github.com/alexshi0000/Tetris-AI" target="_blank">
+										<img class="click-arrow" src="images/right-arrow.png">
+									</a>
+								</div>
+							</div>
+
+							<div id="fractree" class="project-card null">
+								<div class="content-overlay">
+									<h1 class="project-title">
+										FRACTAL &nbsp TREES
+									</h1>
+									<p class="project-description">
+										Design a unique fractal tree, the possibilities are endless
+									</p>
+									<a href="https://github.com/alexshi0000/FractalTree" target="_blank">
+										<img class="click-arrow" src="images/right-arrow.png">
+									</a>
+								</div>
+							</div>
+
+							<div id="moziq" class="project-card null">
+								<div class="content-overlay">
+									<h1 class="project-title">
+										MOSIAQUE
+									</h1>
+									<p class="project-description">
+										Build colorful mosaics out of a a picture album
+									</p>
+									<a href="https://github.com/alexshi0000/Mosiaque" target="_blank">
+										<img class="click-arrow" src="images/right-arrow.png">
+									</a>
+								</div>
+							</div>
+
+							<div id="autodeck" class="project-card null">
+								<div class="content-overlay-light">
+									<h1 class="project-title-dark">
+										AUTODECK
+									</h1>
+									<p class="project-description-dark">
+										Build dynamically generated content by simply speaking
+									</p>
+									<a href="https://github.com/alexshi0000/AutoDeck" target="_blank">
+										<img class="click-arrow-dark" src="images/right-arrow.jpg">
+									</a>
+								</div>
+							</div>
+
+							<div id="mental" class="project-card null">
+								<div class="content-overlay">
+									<h1 class="project-title">
+										E-MOTION
+									</h1>
+									<p class="project-description">
+										NLP mental health journal
+									</p>
+									<a href="https://e-motion-htn.herokuapp.com/landing" target="_blank">
+										<img class="click-arrow" src="images/right-arrow.png">
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div> <!--projects end here-->
+
+				<!--TODO!!!! in the future add a gallery section here.-->
+
+				<div id="contact-container">
+					<div class="contact-wrapper"> <!--enforce width-->
+						<h1 id="contact-header" class="content-header content-header-light">Contact</h1>
+
+						<div class="contact-input-container">
+							<form action="mailto:yuanshi948@gmail.com" method="post" enctype="text/plain">
+								<label for="name">Name</label>
+								<input class="contact-input" type="text" id="name" name="name" placeholder="Your name">
+
+								<label for="email">Email</label>
+								<input class="contact-input" type="text" id="email" name="email" placeholder="Your email">
+
+								<div id="chat-field">
+									<label for="subject">Subject</label>
+									<div id="chat-holder">
+										<textarea id="subject" name="subject" placeholder="Let's chat. Write something"></textarea>
+									</div>
+								</div>
+
+								<div id="button-holder">
+									<input class="contact-input" type="submit" value="Submit">
+								</div>
+							</form>
+						</div>
+					</div>
+
+					<div id="up-arrow-field">
+						<a onclick="scrollup('#top-container', 1400, 1)">
+							<img src="images/up-arrow.png" class="bounce unselectable" id="up-arrow">
+						</a>
+					</div>
+					<!--<div id="up-redirect-field">
+						<div id="up-arrow" class="up-demo unselectable down-arrow-size">
+							<a onclick="scrollup('#top-container',1400,1)"><span class="arrow-span"></span><span></span><span></span></a>
+						</div>
+					</div>-->
+				</div> <!--end of contact section-->
+
+				<!--footer-->
+				<div id="footer">
+					<span id="footer-message">
+						<p>Website made by Alex Shi with plenty of ☕</p>
+					</span>
+					<p id="copyright-notice">Copyright © 2019. All rights reserved</p>
+				</div>
+
+			</div> <!-- end of content -->
   </body>
 </html>
