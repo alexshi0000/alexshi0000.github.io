@@ -104,7 +104,7 @@ img {
   margin-top: -25%;
   margin-left: -41.2vw;
   position: absolute;
-  top: 32%;
+  top: 34%;
 }
 
 .propic-wrapper {
@@ -114,9 +114,7 @@ img {
 }
 
 #top-container {
-  background-image:
-		linear-gradient(to bottom, rgba(10,10,10,0.4), rgba(10, 10, 10, 0.9)),
-		url('../images/wood-planks.jpg');
+  background-color: #111;
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -139,8 +137,7 @@ img {
   color: rgba(225,225,225,1.0);
   text-shadow: rgba(10,10,10,0.3) 0 0 8px;
   font-size: 120px;
-  font-family: 'Poiret One', sans-serif;
-  font-weight: 900;
+  font-family: 'Roboto', sans-serif;
 
   position: relative;
   left: -50%;
