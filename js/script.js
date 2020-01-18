@@ -28,57 +28,57 @@ window.addEventListener('scroll', function() {
   var position = element.getBoundingClientRect();
 
   // checking whether fully visible
-	// don't do on safari (bug)
-	var browserResult = bowser.getParser(navigator.userAgent).getResult();
-	if (browserResult.browser.name == "Chrome") {
-		if(position.top >= 0 && position.bottom <= window.innerHeight) {
-		}
+  // don't do on safari (bug)
+  var browserResult = bowser.getParser(navigator.userAgent).getResult();
+  if (browserResult.browser.name == "Chrome") {
+    if(position.top >= 0 && position.bottom <= window.innerHeight) {
+    }
 
-		// checking for partial visibility
-		if(position.top < window.innerHeight && position.bottom >= 0) {
-			var mosaic = document.querySelector('#mosaic');
-			mosaic.className = mosaic.className.replace(
-				mosaic.className,
-				'bg-scroll'
-			);
-		}
-		else {
-			var mosaic = document.querySelector('#mosaic');
-			mosaic.className = mosaic.className.replace(
-				mosaic.className,
-				'bg-fixed'
-			);
-		}
-	}
-	else if (browserResult.browser.name != "Safari") {
-		var mosaic = document.querySelector('#mosaic');
-		mosaic.className = mosaic.className.replace(
-			mosaic.className,
-			'bg-fixed'
-		);
-	}
-	else {
-		var mosaic = document.querySelector('#mosaic');
-		mosaic.className = mosaic.className.replace(
-			mosaic.className,
-			'bg-no-image'
-		);
-	}
+    // checking for partial visibility
+    if(position.top < window.innerHeight && position.bottom >= 0) {
+      var mosaic = document.querySelector('#mosaic');
+      mosaic.className = mosaic.className.replace(
+	mosaic.className,
+	'bg-scroll'
+      );
+    }
+    else {
+      var mosaic = document.querySelector('#mosaic');
+      mosaic.className = mosaic.className.replace(
+	mosaic.className,
+	'bg-fixed'
+      );
+    }
+  }
+  else if (browserResult.browser.name != "Safari") {
+    var mosaic = document.querySelector('#mosaic');
+    mosaic.className = mosaic.className.replace(
+      mosaic.className,
+      'bg-fixed'
+    );
+  }
+  else {
+    var mosaic = document.querySelector('#mosaic');
+    mosaic.className = mosaic.className.replace(
+      mosaic.className,
+      'bg-no-image'
+    );
+  }
 });
 
 // ANIMATION
 
 function load_animators() {
-	//discriminate for safari
-	var browserResult = bowser.getParser(navigator.userAgent).getResult();
-	var topContainer = document.querySelector('#top-container');
-	if (browserResult.browser.name == "Safari") {
-		topContainer.classList.add('fixed-background');
-	}
+  //discriminate for safari
+  var browserResult = bowser.getParser(navigator.userAgent).getResult();
+  var topContainer = document.querySelector('#top-container');
+  if (browserResult.browser.name == "Safari") {
+    topContainer.classList.add('fixed-background');
+  }
 
-	//set entire page visible
-	document.getElementById("page").style.display = "block";
-	document.getElementById("loading").style.display = "none";
+  //set entire page visible
+  document.getElementById("page").style.display = "block";
+  document.getElementById("loading").style.display = "none";
 
   load_progress();
   load_timeline();
@@ -101,13 +101,13 @@ function load_progress() {
     }
     function checkPosition() {
       for (var i = 0; i < elems.length; i++) {
-        var positionFromTop = elems[i].getBoundingClientRect().top;
-        if (positionFromTop - windowHeight <= 0) {
-          elems[i].className = elems[i].className.replace(
-            elems[i].className.split(' ')[2],
-            elems[i].className.split(' ')[1] + '-after'
-          );
-        }
+	var positionFromTop = elems[i].getBoundingClientRect().top;
+	if (positionFromTop - windowHeight <= 0) {
+	  elems[i].className = elems[i].className.replace(
+	    elems[i].className.split(' ')[2],
+	    elems[i].className.split(' ')[1] + '-after'
+	  );
+	}
       }
     }
     return {
@@ -133,13 +133,13 @@ function load_timeline() {
     }
     function checkPosition() {
       for (var i = 0; i < elems.length; i++) {
-        var positionFromTop = elems[i].getBoundingClientRect().top;
-        if (positionFromTop - windowHeight <= 0) {
-          elems[i].className = elems[i].className.replace(
-            elems[i].className.split(" ")[1],
-            elems[i].className.split(" ")[0] + "-after"
-          );
-        }
+	var positionFromTop = elems[i].getBoundingClientRect().top;
+	if (positionFromTop - windowHeight <= 0) {
+	  elems[i].className = elems[i].className.replace(
+	    elems[i].className.split(" ")[1],
+	    elems[i].className.split(" ")[0] + "-after"
+	  );
+	}
       }
     }
     return {
@@ -165,25 +165,25 @@ function load_projects() {
     }
     function checkPosition() {
       for (var i = 0; i < elems.length; i++) {
-        var positionFromTop = elems[i].getBoundingClientRect().top;
-        if (positionFromTop - windowHeight <= -windowHeight / 4 ) {
-          if (i % 2 === 0) {
-            elems[i].className = elems[i].className.replace(
-              elems[i].className.split(' ')[1],
-              'project-card-after-right'
-            );
-            elems[i].className = elems[i].className.replace(
-              elems[i].className.split(' ')[2],
-              'project-card-visible'
-            );
-          }
-          else {
-            elems[i].className = elems[i].className.replace(
-              elems[i].className.split(' ')[1],
-              'project-card-after-left'
-            );
-          }
-        }
+	var positionFromTop = elems[i].getBoundingClientRect().top;
+	if (positionFromTop - windowHeight <= -windowHeight / 4 ) {
+	  if (i % 2 === 0) {
+	    elems[i].className = elems[i].className.replace(
+	      elems[i].className.split(' ')[1],
+	      'project-card-after-right'
+	    );
+	    elems[i].className = elems[i].className.replace(
+	      elems[i].className.split(' ')[2],
+	      'project-card-visible'
+	    );
+	  }
+	  else {
+	    elems[i].className = elems[i].className.replace(
+	      elems[i].className.split(' ')[1],
+	      'project-card-after-left'
+	    );
+	  }
+	}
       }
     }
     return {
