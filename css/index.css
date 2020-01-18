@@ -67,7 +67,7 @@ img {
 #navbar-list {
   text-align:center;
   display:inline;
-	padding-left: 3.4%;
+  padding-left: 3.4%;
 }
 
 .navbar-entries {
@@ -111,7 +111,7 @@ img {
 
 /*propic*/
 #propic {
-	z-index: 99;
+  z-index: 99;
   height: auto;
   width:  38vh;
   left: 50%;
