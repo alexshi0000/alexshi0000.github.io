@@ -266,14 +266,14 @@
 #galaxy {
   background-image: url('../images/galaxy-optimized.gif');
   background-size: 80% 95%;
-	background-color: #000;
+  background-color: #000;
 }
 
 
 #tetris {
   background-image: url('../images/tetris.gif');
   background-size: 45% 103%;
-	background-color: #24303f;
+  background-color: #24303f;
 }
 
 #chat {
