@@ -37,14 +37,14 @@ $(".circle:eq(0)").addClass("is-active");
 // Adapted from http://www.webdesigncrowd.com/scrolling-progress-bar/
 $(window).scroll(function (){
     var top = $(this).scrollTop();
- 
+
     // Calculate each progress section
     $(".section").each(function(i){
         var this_top    = $(this).offset().top - 20;
         var height      = $(this).height();
         var this_bottom = this_top + height;
         var percent     = 0;
- 
+
         // Scrolled within current section
         if (top >= this_top && top <= this_bottom) {
           percent = ((top - this_top) / height) * 100;
@@ -53,16 +53,15 @@ $(window).scroll(function (){
           }
         }
         else if (top > this_bottom) {
-          percent = 100;          
+          percent = 100;
         }
-        
         // Adds the active class
         if(percent < 100 && percent > 0) {
           if(!$(".circle:eq("+ i + ")").hasClass("is-active")) {
             $(".circle:eq("+ i + ")").toggleClass("is-active");
-          };
+          }
         } else {
-            $(".circle:eq("+ i + ")").removeClass("is-active");          
+            $(".circle:eq("+ i + ")").removeClass("is-active");
         }
 
         // "Fills" the circles
@@ -71,7 +70,7 @@ $(window).scroll(function (){
           $(".mask-left .fill:eq("+i+")").css(prefix + "transform", rotate + "0)");
         } else if( percent > 50) {
           $(".mask-left .fill:eq("+i+")").css(prefix + "transform", rotate + (( 360 * percent / 100) - 180) * 1 + "deg)");
-          $(".mask-right .fill:eq("+i+")").css(prefix + "transform", rotate + "180deg)"); 
+          $(".mask-right .fill:eq("+i+")").css(prefix + "transform", rotate + "180deg)");
         }
     });
 });

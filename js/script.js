@@ -13,14 +13,6 @@ function scrollup(target, speed) {
   }, speed);
 }
 
-function resumePopup() {
-  //TODO is actually whitened
-}
-
-function resumeDownload() {
-  //TODO
-}
-
 // PROJECT SECTION SCROLL EFFECT
 
 window.addEventListener('scroll', function() {
@@ -36,14 +28,14 @@ window.addEventListener('scroll', function() {
 
     // checking for partial visibility
     if(position.top < window.innerHeight && position.bottom >= 0) {
-      var mosaic = document.querySelector('#mosaic');
+      let mosaic = document.querySelector('#mosaic')
       mosaic.className = mosaic.className.replace(
 	mosaic.className,
 	'bg-scroll'
       );
     }
     else {
-      var mosaic = document.querySelector('#mosaic');
+      let mosaic = document.querySelector('#mosaic')
       mosaic.className = mosaic.className.replace(
 	mosaic.className,
 	'bg-fixed'
@@ -51,7 +43,7 @@ window.addEventListener('scroll', function() {
     }
   }
   else if (browserResult.browser.name != "Safari") {
-    var mosaic = document.querySelector('#mosaic');
+    let mosaic = document.querySelector('#mosaic')
     mosaic.className = mosaic.className.replace(
       mosaic.className,
       'bg-fixed'

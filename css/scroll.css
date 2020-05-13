@@ -15,34 +15,34 @@ section::after {
 }
 
 #down-arrow {
-	animation: dim-out 0.25s, bounce 2s infinite;
-	z-index: 99;
-	display: block;
+  animation: dim-out 0.25s, bounce 2s infinite;
+  z-index: 99;
+  display: block;
   position: absolute;
-	width: 5.6vh;
-	height: auto;
-	left: 50%;
-	margin-left: -2.8vh;
-	float: bottom;
-	top: 92%;
-	opacity: .7;
+  width: 5.0vh;
+  height: auto;
+  left: 50%;
+  margin-left: -2.5vh;
+  float: bottom;
+  top: 92%;
+  opacity: .7;
 }
 
 #down-arrow:hover {
-	animation: dim-in 0.25s, bounce 2s infinite;
-	z-index: 99;
-	display: block;
+  animation: dim-in 0.25s, bounce 2s infinite;
+  z-index: 99;
+  display: block;
   position: absolute;
-	width: 5.6vh;
-	height: auto;
-	left: 50%;
-	margin-left: -2.8vh;
-	float: bottom;
-	opacity: .3;
+  width: 5.0vh;
+  height: auto;
+  left: 50%;
+  margin-left: -2.5vh;
+  float: bottom;
+  opacity: .3;
 }
 
 .bounce {
-	/*REMOVED*/
+  /*REMOVED*/
 }
 
 @keyframes bounce {
@@ -58,50 +58,50 @@ section::after {
 }
 
 @keyframes dim-in {
-	from {
-		opacity: .7;
-	}
-	to {
-		opacity: .3;
-	}
+  from {
+    opacity: .7;
+  }
+  to {
+    opacity: .3;
+  }
 }
 
 @keyframes dim-out {
-	from {
-		opacity: .3;
-	}
-	to {
-		opacity: .7;
-	}
+  from {
+    opacity: .3;
+  }
+  to {
+    opacity: .7;
+  }
 }
 
 /*up arrow*/
 
 #up-arrow {
-	animation: dim-out 0.25s, rev-bounce 2s infinite;
-	z-index: 99;
-	display: block;
+  animation: dim-out 0.25s, rev-bounce 2s infinite;
+  z-index: 99;
+  display: block;
   position: absolute;
-	width: 5.6vh;
-	height: auto;
-	left: 50%;
-	margin-left: -2.8vh;
-	float: bottom;
-	top: 88%;
-	opacity: .7;
+  width: 5.0vh;
+  height: auto;
+  left: 50%;
+  margin-left: -2.5vh;
+  float: bottom;
+  top: 88%;
+  opacity: .7;
 }
 
 #up-arrow:hover {
-	animation: dim-in 0.25s, rev-bounce 2s infinite;
-	z-index: 99;
-	display: block;
+  animation: dim-in 0.25s, rev-bounce 2s infinite;
+  z-index: 99;
+  display: block;
   position: absolute;
-	width: 5.6vh;
-	height: auto;
-	left: 50%;
-	margin-left: -2.8vh;
-	float: bottom;
-	opacity: .3;
+  width: 5.0vh;
+  height: auto;
+  left: 50%;
+  margin-left: -2.5vh;
+  float: bottom;
+  opacity: .3;
 }
 
 @keyframes rev-bounce {
@@ -117,5 +117,5 @@ section::after {
 }
 
 #up-arrow-field {
-	height: 12%;
+  height: 12%;
 }

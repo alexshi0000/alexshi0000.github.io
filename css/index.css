@@ -72,13 +72,13 @@ img {
 
 .navbar-entries {
   display: inline-block;
-  padding: 0.5%;
-  padding-right: 1.1%;
+  padding: 0.75%;
+  padding-right: 2.0%;
   margin: 0px !important;
 }
 
 .navbar-links {
-  font-size: 190%;
+  font-size: 28px;
   font-family: 'Poiret One';
   color: rgba(255,255,255,0.45);
 
@@ -94,7 +94,7 @@ img {
 }
 
 .navbar-links:hover {
-  font-size: 190%;
+  font-size: 28px;
   font-family: 'Poiret One';
   color: rgba(255,255,255,1);
 
@@ -113,10 +113,10 @@ img {
 #propic {
   z-index: 99;
   height: auto;
-  width:  38vh;
+  width:  36vh;
   left: 50%;
   margin-top: -30vh;
-  margin-left: -19vh;
+  margin-left: -18vh;
   position: absolute;
   top: 52%;
 }
@@ -157,7 +157,7 @@ img {
   outline: 1px solid transparent;
   margin-left: 12px;
   margin-top: 10px;
-  height: 5%;
+  height: 40px;
   width: auto;
   float: left;
   position: absolute;
@@ -190,7 +190,7 @@ img {
   margin: 0 auto;
   color: rgba(225,225,225,1.0);
   text-shadow: rgba(0,0,0,0.5) 0 0 12px;
-  font-size: 7vh;
+  font-size: 5.5vh;
   font-family: 'Poiret One', sans-serif;
 
 	-webkit-text-stroke-width: 2px;
