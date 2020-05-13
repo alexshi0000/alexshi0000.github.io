@@ -2,7 +2,7 @@
   margin: 0px;
   position: relative;
   display: inline-block;
-  padding-top: 1%;
+  padding-top: 1.5%;
   text-align: center;
   width: 100%;
   background-color: #111;
@@ -11,12 +11,12 @@
 }
 
 #footer-message {
-  font-size: 135%;
+  font-size: 110%;
   color: #eee;
 }
 
 #copyright-notice {
-  padding: 0px;
-  font-size: 90%;
+  padding-bottom: 2%;
+  font-size: 85%;
   color: #aaa;
 }

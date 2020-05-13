@@ -10,4 +10,8 @@ function submit_contact() {
 		+ '&incoming=personalsite'
 	Http.open('POST', url)
 	Http.send()
+	//send success snackbar
+  var x = document.getElementById("snackbar");
+  x.className = "show";
+  setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
 }
