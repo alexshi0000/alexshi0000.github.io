@@ -12,17 +12,17 @@
 }
 
 /* ANIMATIONS */
-@keyframes fill-cpp-bar    { from {width: 0%; opacity: 0.0} to {width: 77%; opacity: 1.0} }
-@keyframes fill-html-bar   { from {width: 0%; opacity: 0.0} to {width: 92%; opacity: 1.0} }
-@keyframes fill-java-bar   { from {width: 0%; opacity: 0.0} to {width: 71%; opacity: 1.0} }
-@keyframes fill-python-bar { from {width: 0%; opacity: 0.0} to {width: 86%; opacity: 1.0} }
-@keyframes fill-lisp-bar   { from {width: 0%; opacity: 0.0} to {width: 42%; opacity: 1.0} }
+@keyframes fill-cpp-bar    { from {width: 0%; opacity: 0.0} to {width: 80%; opacity: 1.0} }
+@keyframes fill-html-bar   { from {width: 0%; opacity: 0.0} to {width: 95%; opacity: 1.0} }
+@keyframes fill-java-bar   { from {width: 0%; opacity: 0.0} to {width: 74%; opacity: 1.0} }
+@keyframes fill-python-bar { from {width: 0%; opacity: 0.0} to {width: 89%; opacity: 1.0} }
+@keyframes fill-lisp-bar   { from {width: 0%; opacity: 0.0} to {width: 45%; opacity: 1.0} }
 
-@keyframes fill-cuda-bar   { from {width: 0%; opacity: 0.0} to {width: 65%; opacity: 1.0} }
-@keyframes fill-react-bar  { from {width: 0%; opacity: 0.0} to {width: 94%; opacity: 1.0} }
-@keyframes fill-spring-bar { from {width: 0%; opacity: 0.0} to {width: 69%; opacity: 1.0} }
-@keyframes fill-flask-bar  { from {width: 0%; opacity: 0.0} to {width: 90%; opacity: 1.0} }
-@keyframes fill-node-bar   { from {width: 0%; opacity: 0.0} to {width: 84%; opacity: 1.0} }
+@keyframes fill-cuda-bar   { from {width: 0%; opacity: 0.0} to {width: 68%; opacity: 1.0} }
+@keyframes fill-react-bar  { from {width: 0%; opacity: 0.0} to {width: 97%; opacity: 1.0} }
+@keyframes fill-spring-bar { from {width: 0%; opacity: 0.0} to {width: 72%; opacity: 1.0} }
+@keyframes fill-flask-bar  { from {width: 0%; opacity: 0.0} to {width: 93%; opacity: 1.0} }
+@keyframes fill-node-bar   { from {width: 0%; opacity: 0.0} to {width: 87%; opacity: 1.0} }
 
 /* before */
 .cpp-skill    {width: 0%; background-color: #f34b7d;}
@@ -39,14 +39,14 @@
 
 /* after */
 
-.cpp-skill-after    {width: 77%; animation: fill-cpp-bar    3.0s; animation-timing-function: ease-out}
-.html-skill-after   {width: 92%; animation: fill-html-bar   3.0s; animation-timing-function: ease-out}
-.java-skill-after   {width: 71%; animation: fill-java-bar   3.0s; animation-timing-function: ease-out}
-.python-skill-after {width: 86%; animation: fill-python-bar 3.0s; animation-timing-function: ease-out}
-.lisp-skill-after   {width: 42%; animation: fill-lisp-bar   3.0s; animation-timing-function: ease-out}
+.cpp-skill-after    {width: 80%; animation: fill-cpp-bar    3.0s; animation-timing-function: ease-out}
+.html-skill-after   {width: 95%; animation: fill-html-bar   3.0s; animation-timing-function: ease-out}
+.java-skill-after   {width: 74%; animation: fill-java-bar   3.0s; animation-timing-function: ease-out}
+.python-skill-after {width: 89%; animation: fill-python-bar 3.0s; animation-timing-function: ease-out}
+.lisp-skill-after   {width: 45%; animation: fill-lisp-bar   3.0s; animation-timing-function: ease-out}
 
-.cuda-skill-after   {width: 65%; animation: fill-cuda-bar   3.0s; animation-timing-function: ease-out}
-.react-skill-after  {width: 94%; animation: fill-react-bar  3.0s; animation-timing-function: ease-out}
-.spring-skill-after {width: 69%; animation: fill-spring-bar 3.0s; animation-timing-function: ease-out}
-.flask-skill-after  {width: 90%; animation: fill-flask-bar  3.0s; animation-timing-function: ease-out}
-.node-skill-after   {width: 84%; animation: fill-node-bar   3.0s; animation-timing-function: ease-out}
+.cuda-skill-after   {width: 68%; animation: fill-cuda-bar   3.0s; animation-timing-function: ease-out}
+.react-skill-after  {width: 97%; animation: fill-react-bar  3.0s; animation-timing-function: ease-out}
+.spring-skill-after {width: 72%; animation: fill-spring-bar 3.0s; animation-timing-function: ease-out}
+.flask-skill-after  {width: 93%; animation: fill-flask-bar  3.0s; animation-timing-function: ease-out}
+.node-skill-after   {width: 87%; animation: fill-node-bar   3.0s; animation-timing-function: ease-out}
